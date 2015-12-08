@@ -1,0 +1,67 @@
+[
+  {
+    "nid" : "1",
+    "title" : "Birth of Barry Bingham",
+    "field_summary" : "Rear Admiral The Honourable Edward Barry Stewart Bingham VC, OBE born at Bangor Castle, Bangor",
+    "field_content" : "Rear Admiral The Honourable Edward Barry Stewart Bingham VC, OBE was born at Bangor Castle, Bangor on July 26, 1881. The third son of John George Barry Bingham, 5th Baron Clanmorris.\n",
+    "field_timeline_date" : "28th July 1881",
+    "view_node" : "view",
+    "field_section" : "1",
+    "field_type" : "7",
+    "ImageTitle" : "",
+    "ImageFileName" : "VCTheHon.EdwardBarryStewartBingham.jpg",
+    "ImageAltText" : ""
+  },
+  {
+    "nid" : "2",
+    "title" : "Stationed in the Bermuda Islands",
+    "field_summary" : "Journal Entry 1897 - 1899 - Sketch of the Bermuda Islands",
+    "field_content" : "Journal Entry 1897 - 1899 - Sketch of the Bermuda Islands\n",
+    "field_timeline_date" : "1897",
+    "view_node" : "view",
+    "field_section" : "2",
+    "field_type" : "7",
+    "ImageTitle" : "",
+    "ImageFileName" : "",
+    "ImageAltText" : ""
+  },
+  {
+    "nid" : "3",
+    "title" : "The Commissioning of H.M.S. “Invincible\"",
+    "field_summary" : "My new ship was a battle-cruiser of the Dreadnought type, sister ship of the Inflexible and Indomitable",
+    "field_content" : "A more hopeless-looking ship than the Invincible, as she appeared on the morning of August 3rd, I never wish to behold or to commission again. \nThe dockyard was in feverish activity. The noise was indescribable … the ship's company triumphed in this inferno of turmoil, din, and filth - despite ‘mateys’, electricians, foremen, and the rest of them - with such effect, that by the 12th the ship was stored, provisioned, coaled, and a speed trial had been successfully accomplished.\nIn my own case, I had the further duties of boarding-officer; and the burden of the midshipmen's discipline and education, both moral and intellectual, lay on my shoulders. Unfortunately for them - though they probably thought otherwise - their instruction was very intermittent owing to the exigencies of wartime”\n",
+    "field_timeline_date" : "01st August 1914",
+    "view_node" : "view",
+    "field_section" : "3",
+    "field_type" : "7",
+    "ImageTitle" : "HMS Invincible",
+    "ImageFileName" : "HMS_Invincible_(1907)_British_Battleship.jpg",
+    "ImageAltText" : "HMS Invincible"
+  },
+  {
+    "nid" : "4",
+    "title" : "The Battle of Heligoland Bight",
+    "field_summary" : "The affair was a walk-over; our light cruisers and destroyers distinguished themselves and had all the thrills of a fight on more or less even terms.",
+    "field_content" : "\"For the battle-cruisers, every one of whom let drive at the two light cruisers thus decoyed, the Koln and the Ariadne, the affair was a walk-over; on the other hand, our light cruisers and destroyers distinguished themselves and had all the thrills of a fight on more or less even terms. \nAt the same time, it was just the thing we wanted for our guns' crews, because it constituted a highly exhilarating battle practice, with real targets and real ammunition. It is unfair to say that there was any real reply, because the German ships, though they gallantly fought their guns to the last, were hopelessly outnumbered and outgunned, and the nearest thing we had was one German shell which fell some hundred yards short. We were, however, kept on the alert by submarines, two of which nearly succeeded in torpedoing us on two different occasions.”\n",
+    "field_timeline_date" : "28th August 1914",
+    "view_node" : "view",
+    "field_section" : "3",
+    "field_type" : "7",
+    "ImageTitle" : "Sinking of the Mainz",
+    "ImageFileName" : "1024px-Sinking_of_Mainz.jpg",
+    "ImageAltText" : "Sinking of the Mainz"
+  },
+  {
+    "nid" : "5",
+    "title" : "The Grand Fleet Parade",
+    "field_summary" : "This ‘Grand Fleet Parade’ as we used to call it, had the primary object of discovering the enemy and forcing an action upon him.",
+    "field_content" : "Except when requisitioned for such special duties, the Invincible cruised in company with the other battle-cruisers in the North Sea. \nThis cruising meant nothing more than a three or four days jaunt… round those waters, visiting all likely latitudes where the enemy might be found; all the time carrying out manoeuvres, wherein the officers and men of all ships were being continually exercised in general gunnery and fighting efficiency.\n",
+    "field_timeline_date" : "September 1914",
+    "view_node" : "view",
+    "field_section" : "3",
+    "field_type" : "7",
+    "ImageTitle" : "Grand Fleet Parade Review",
+    "ImageFileName" : "review8.jpg",
+    "ImageAltText" : "Grand Fleet Parade Review"
+  }
+]
