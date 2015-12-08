@@ -1,0 +1,47 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- CSS -->
+    <!-- load bootstrap (bootswatch version) -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/readable/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- JS -->
+    <!-- load angular, ngRoute, ngAnimate ,sanatize, touch 1.4.8-->
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-ui-router.js"></script>
+    <script src="libs/angular-animate.min.js"></script>
+	<script src="libs/angular-touch.min.js"></script>
+	<script src="libs/angular-sanitize.min.js"></script>
+
+    
+    <!--- App Code -->
+    <script src="js/app.js"></script>    
+    <script src="js/controllers/HomeController.js"></script>
+    <script src="js/controllers/TimelineItemController.js"></script>
+    <script src="js/controllers/TimelineController.js"></script>
+    <script src="js/controllers/BattleController.js"></script>
+    <script src="js/controllers/BattleItemController.js"></script>
+    <script src="js/controllers/GameController.js"></script>
+    <script src="js/controllers/ng-pdfviewer.js"></script> 
+  
+</head>
+
+<!-- apply our angular app -->
+<body ng-app="jutlandApp">
+
+    <!-- inject our views using ng-view -->
+    <!-- each angular controller applies a different class here -->
+    <!-- <div class="page {{ pageClass }}" ng-view></div> -->
+    <div class="page" ui-view></div>
+    
+<ul>
+    <a href="#/home">Home</a>
+    <a>The Man</a>
+    <a>The Battle</a>
+    <a href="#/game">The Game</a>
+</ul> 
+</body>
+</html>
