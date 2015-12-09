@@ -1,4 +1,4 @@
-angular.module('jutlandApp', ['ui.router', 'HomeController', 'GameController','TimelineController'])
+angular.module('jutlandApp', ['ui.router', 'HomeController', 'GameController','TimelineSectionsController','TimelineSectionController','TimelineController'])
   .run(function ($http, $rootScope) {
     $http.get('json/timeline_personal.json').success(function (data) {
       $rootScope.timelinePersonal = data;
@@ -20,23 +20,33 @@ angular.module('jutlandApp', ['ui.router', 'HomeController', 'GameController','T
         cache: false,
         url: '/home',
         controller: 'HomeController',
-        templateUrl: 'templates/home.html'
-      })
-      .state('timelineHome', {
-        url: '/timelineHome',
-        templateUrl: 'templates/timeline_home.html',
+        templateUrl: 'templates/home.html',
         onEnter: function(){
+            angular.element(document.getElementsByTagName('body')[0]).addClass("home-page");   
+        },        
+        onExit: function(){
             angular.element(document.getElementsByTagName('body')[0]).removeClass("home-page");   
-        }
+        }        
+      })
+      .state('timelineSectionsHome', {
+        url: '/timelineSectionsHome',
+        templateUrl: 'templates/timeline_home.html'
       })
       .state('timelineSections', {
         url: '/timelineSections/:sectionId',
         templateUrl: 'templates/timeline_sections.html',
-        controller:'TimelineController',
-        onEnter: function(){
-            angular.element(document.getElementsByTagName('body')[0]).removeClass("home-page");   
-        }
+        controller:'TimelineSectionsController'
       })      
+      .state('timelineSections.section', {
+        url: '/section/:sectionId',
+        templateUrl: 'templates/timeline_section.html',
+        controller:'TimelineSectionController'
+      })         
+      .state('timelineItem', {
+        url: '/timelineItem',
+        templateUrl: 'templates/timelineItem.html',
+        controller:'TimelineController'
+      })
       .state('game', {
         url: '/game',
         controller: 'GameController',

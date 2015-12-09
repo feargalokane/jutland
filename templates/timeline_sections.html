@@ -1,11 +1,11 @@
     <aside>
     	<ul class="home-list">
-        <li ng-repeat="section in timelineSections" class="section-{{section.TID}}">
-          <a href="#/timelineSection/{{section.TID}}">
-            <h3>{{section.name}}</h3>
+        <li ng-repeat="item in timelineSections">
+          <a ui-sref="timelineSections.section({sectionId: item.TID})"  id="section-{{item.TID}}">
+            <h3>{{item.name}}</h3>
           </a>
         </li>
     	</ul>
     </aside>
-	<div timeline>
-	</div>
+    <h2>Timelines</h2>
+    <div class="section" ui-view></div>
