@@ -1,4 +1,4 @@
-angular.module('jutlandApp', ['ui.router', 'HomeController', 'GameController','TimelineSectionsController','TimelineSectionController','TimelineController','TimelineItemController'])
+angular.module('jutlandApp', ['ui.router', 'HomeController', 'GameController','TimelineSectionsController','TimelineSectionController','TimelineController','TimelineItemController','ngAnimate'])
   .run(function ($http, $rootScope) {
     $http.get('json/timeline_items.json').success(function (data) {
       $rootScope.timelineItems = data;
