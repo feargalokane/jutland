@@ -1,20 +1,11 @@
     <aside>
-        <h2>Personal</h2>
-    	<ul class="perosnal-list">
-        <li ng-repeat="item in sectionPersonalTimeline" class="timeline-{{item.field_section}}-{{item.nid}}">
-          <a href="#/timelineItem/{{item.nid}}'">
+        <h2>Timeline</h2>
+    	<ul>
+        <li ng-repeat="item in sectionTimeline" class="timeline-{{item.field_section}}-{{item.nid}} {{item.field_type}}">
+          <a href="#/timeline/{{item.field_section}}/{{item.nid}}">
             <h3>{{item.title}}</h3>
           </a>
         </li>
     	</ul>
     </aside>
-    <aside>
-    <h2>World</h2> 
-    	<ul class="world-list">
-        <li ng-repeat="item in sectionWorldTimeline" class="timeline-{{item.field_section}}-{{item.nid}}">
-          <a href="#/timelineItem/{{item.nid}}}'">
-            <h3>{{item.title}}</h3>
-          </a>
-        </li>
-    	</ul>
-    </aside>
+    

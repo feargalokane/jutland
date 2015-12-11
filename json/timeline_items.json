@@ -7,7 +7,7 @@
     "field_timeline_date" : "28th July 1881",
     "view_node" : "view",
     "field_section" : "1",
-    "field_type" : "7",
+    "field_type" : "Personal",
     "ImageTitle" : "",
     "ImageFileName" : "VCTheHon.EdwardBarryStewartBingham.jpg",
     "ImageAltText" : ""
@@ -20,7 +20,7 @@
     "field_timeline_date" : "1897",
     "view_node" : "view",
     "field_section" : "2",
-    "field_type" : "7",
+    "field_type" : "Personal",
     "ImageTitle" : "",
     "ImageFileName" : "",
     "ImageAltText" : ""
@@ -33,10 +33,23 @@
     "field_timeline_date" : "01st August 1914",
     "view_node" : "view",
     "field_section" : "3",
-    "field_type" : "7",
+    "field_type" : "Personal",
     "ImageTitle" : "HMS Invincible",
     "ImageFileName" : "HMS_Invincible_(1907)_British_Battleship.jpg",
     "ImageAltText" : "HMS Invincible"
+  },
+  {
+    "nid" : "9",
+    "title" : "Britain Declares War on Germany",
+    "field_summary" : "",
+    "field_content" : "",
+    "field_timeline_date" : "04th August 1914",
+    "view_node" : "view",
+    "field_section" : "3",
+    "field_type" : "World",
+    "ImageTitle" : "",
+    "ImageFileName" : "",
+    "ImageAltText" : ""
   },
   {
     "nid" : "4",
@@ -46,7 +59,7 @@
     "field_timeline_date" : "28th August 1914",
     "view_node" : "view",
     "field_section" : "3",
-    "field_type" : "7",
+    "field_type" : "Personal",
     "ImageTitle" : "Sinking of the Mainz",
     "ImageFileName" : "1024px-Sinking_of_Mainz.jpg",
     "ImageAltText" : "Sinking of the Mainz"
@@ -59,7 +72,7 @@
     "field_timeline_date" : "September 1914",
     "view_node" : "view",
     "field_section" : "3",
-    "field_type" : "7",
+    "field_type" : "Personal",
     "ImageTitle" : "Grand Fleet Parade Review",
     "ImageFileName" : "review8.jpg",
     "ImageAltText" : "Grand Fleet Parade Review"

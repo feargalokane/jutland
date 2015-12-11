@@ -1,0 +1,12 @@
+    <aside>
+    	<ul class="timeline-list">
+        <li><a href="#/timelineSections/{{section.TID}}">{{section.name}} (This is the way back)</li>            
+        <li ng-repeat="item in sectionTimeline">
+          <a ui-sref="timeline.item({id: item.nid})"  id="item-{{item.nid}}">
+            <h3>{{item.title}}</h3>
+          </a>
+        </li>
+    	</ul>
+    </aside>
+
+    <div class="item" ui-view></div>

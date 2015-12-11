@@ -1,11 +1,7 @@
-angular.module('jutlandApp', ['ui.router', 'HomeController', 'GameController','TimelineSectionsController','TimelineSectionController','TimelineController'])
+angular.module('jutlandApp', ['ui.router', 'HomeController', 'GameController','TimelineSectionsController','TimelineSectionController','TimelineController','TimelineItemController'])
   .run(function ($http, $rootScope) {
-    $http.get('json/timeline_personal.json').success(function (data) {
-      $rootScope.timelinePersonal = data;
-    });
-
-    $http.get('json/timeline_world.json').success(function (data) {
-      $rootScope.timelineWorld = data;
+    $http.get('json/timeline_items.json').success(function (data) {
+      $rootScope.timelineItems = data;
     });
 
     $http.get('json/timeline_sections.json').success(function (data) {
@@ -35,17 +31,36 @@ angular.module('jutlandApp', ['ui.router', 'HomeController', 'GameController','T
       .state('timelineSections', {
         url: '/timelineSections/:sectionId',
         templateUrl: 'templates/timeline_sections.html',
-        controller:'TimelineSectionsController'
+        controller:'TimelineSectionsController',
+         onEnter: function($stateParams){
+            angular.element(document.getElementsByTagName('body')[0]).addClass("section-"+$stateParams.sectionId);   
+        },        
+        onExit: function($stateParams){
+            angular.element(document.getElementsByTagName('body')[0]).removeClass("section-"+$stateParams.sectionId);   
+        }      
       })      
       .state('timelineSections.section', {
         url: '/section/:sectionId',
         templateUrl: 'templates/timeline_section.html',
         controller:'TimelineSectionController'
       })         
-      .state('timelineItem', {
-        url: '/timelineItem',
+      .state('timeline', {
+        url: '/timeline/:sectionId/:timelineId',
+        templateUrl: 'templates/timeline.html',
+        controller:'TimelineController',
+          onEnter: function($stateParams){
+            angular.element(document.getElementsByTagName('body')[0]).addClass("section-"+$stateParams.sectionId);   
+            angular.element(document.getElementsByTagName('body')[0]).addClass("timeline-"+$stateParams.timelineId);   
+        },        
+        onExit: function($stateParams){
+            angular.element(document.getElementsByTagName('body')[0]).removeClass("section-"+$stateParams.sectionId);
+            angular.element(document.getElementsByTagName('body')[0]).removeClass("timeline-"+$stateParams.timelineId);     
+        }      
+      })
+      .state('timeline.item', {
+        url: '/timelineItem/:id',
         templateUrl: 'templates/timelineItem.html',
-        controller:'TimelineController'
+        controller:'TimelineItemController'
       })
       .state('game', {
         url: '/game',
