@@ -1,0 +1,125 @@
+nav.main ul,
+ul.home-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+ul.home-list {
+	position: inherit;
+}
+
+nav.main ul li,
+ul.home-list li {
+	display: inline-block;
+	min-width: 20%;
+	margin: 0 2% 0 0;
+	background: #efefef;
+	text-align: center;
+}
+
+nav.main ul li a,
+ul.home-list li a {
+	color: #000;
+	text-decoration: none;
+	display: block;
+}
+
+.home-page nav.main ul {
+	position: inherit;
+}
+
+.home-page nav.main ul li {
+	font-size: 4em;
+}
+
+/* Sections Page */
+ul.home-list {
+
+}
+
+/* Section Page */
+.section-1 .home-list,
+.section-2 .home-list,
+.section-3 .home-list,
+.section-4 .home-list,
+.section-5 .home-list,
+.section-6 .home-list  {
+	width: 20%;
+	height:93%;
+	position: fixed ;
+	left: 2%;
+	top: 2%;
+	bottom: 5%;
+	background: #ccc;
+}
+
+.section-1 .page .section,
+.section-2 .page .section,
+.section-3 .page .section,
+.section-4 .page .section,
+.section-5 .page .section,
+.section-6 .page .section {
+	position: fixed;
+	width: 74%;
+	left: 24%;
+	top: 2%;
+	bottom: 5%;
+	height: 97%;
+	background: #efefef;
+}
+
+.section-1 ul.home-list li,
+.section-2 ul.home-list li,
+.section-3 ul.home-list li,
+.section-4 ul.home-list li,
+.section-5 ul.home-list li,
+.section-6 ul.home-list li
+  {
+	width: 100%;
+}
+
+.section-1 #section-1,
+.section-2 #section-2,
+.section-3 #section-3,
+.section-4 #section-4,
+.section-5 #section-5,
+.section-6 #section-6 {
+	background: green;
+	color: #fff;
+}
+
+/* Timeline Page */
+.timeline-1 .timeline-list,
+.timeline-2 .timeline-list,
+.timeline-3 .timeline-list,
+.timeline-4 .timeline-list,
+.timeline-5 .timeline-list,
+.timeline-6 .timeline-list
+ {
+	width: 20%;
+	height:93%;
+	position: fixed ;
+	left: 2%;
+	top: 2%;
+	bottom: 5%;
+	background: #ccc;
+}
+
+.timeline-1 .page .item,
+.timeline-2 .page .item,
+.timeline-3 .page .item,
+.timeline-4 .page .item,
+.timeline-5 .page .item,
+.timeline-6 .page .item {
+	position: fixed;
+	width: 74%;
+	left: 24%;
+	top: 2%;
+	bottom: 5%;
+	height: 97%;
+	background: #efefef;
+}
