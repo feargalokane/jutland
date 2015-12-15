@@ -1,9 +1,14 @@
-    <aside>
-    	<ul class="home-list">
-        <li ng-repeat="section in timelineSections" id="section-{{section.TID}}">
-          <a href="#/timelineSections/{{section.TID}}">
-            <h3>{{section.name}}</h3>
-          </a>
+<section class="section">
+    <ul class="section-list secondary">
+        <li ng-repeat="section in timelineSections">
+            <div class="section-link">
+                <a href="#/timelineSections/{{section.TID}}">
+                    <div class="round">
+                        <img src="/img/260-260.png" alt="Post Thumbnail">
+                    </div>
+                    <h2 class="headline">{{section.name}}</h2>
+                </a>
+            </div>
         </li>
-    	</ul>
-    </aside>
+    </ul>
+</section>

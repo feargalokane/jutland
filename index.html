@@ -5,7 +5,6 @@
 
     <!-- CSS -->
     <!-- load bootstrap (bootswatch version) -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/readable/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     
     <!-- JS -->
@@ -39,13 +38,32 @@
     <!-- <div class="page {{ pageClass }}" ng-view></div> -->
     <div class="page" ui-view></div>
 
-<nav class="main">
-<ul>
-   <li> <a href="#/home">Home</a></li>
-   <li> <a href="#/timelineSectionsHome">The Man</a></li>
-   <li> <a>The Battle</a></li>
-   <li> <a href="#/game">The Game</a></li>
-</ul> 
-</nav>
+<section class="section">
+			<ul class="section-list navigation">
+				<li>	<div class="section-link">
+		<a href="#/timelineSectionsHome">
+			<div class="round">
+				<img src="/img/360-360.png" alt="Post Thumbnail">			</div>
+				<h2 class="headline">The Man</h2>
+		</a>
+	</div></li>
+				<li>	<div class="section-link">
+		<a href="#">
+			<div class="round">
+				<img src="/img/360-360.png" alt="Ivy">			</div>
+				<h2 class="headline">The Battle</h2>
+		</a>
+	</div></li>
+				<li>	<div class="section-link">
+		<a href="#/game">
+			<div class="round">
+				<img src="/img/360-360.png" alt="Yosemite">			</div>
+				<h2 class="headline">The Game</h2>
+		</a>
+	</div></li>
+        <a href="#/home">
+			</ul>
+			<h1 class="site-title">Jutland Interactive App</h1>		</section>
+        </a>
 </body>
 </html>

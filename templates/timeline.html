@@ -1,12 +1,16 @@
-    <aside>
-    	<ul class="timeline-list">
-        <li><a href="#/timelineSections/{{section.TID}}">{{section.name}} (This is the way back)</li>            
+<section class="timeline">
+    <a href="#/timelineSections/{{section.TID}}"><h1 class="page-title">{{section.name}}</h1></a>
+    <ul class="timeline-list personal">
         <li ng-repeat="item in sectionTimeline">
-          <a ui-sref="timeline.item({id: item.nid})"  id="item-{{item.nid}}" class="{{item.field_type}}">
-            <h3>{{item.title}}</h3>
-          </a>
+            <div class="timeline-link personal">
+                <a ui-sref="timeline.item({id: item.nid})" id="item-{{item.nid}}" class="{{item.field_type}}">
+                    <h2 class="headline">{{item.title}}</h2>
+                    <p>{{item.field_summary}}</p>
+                    <span>{{item.field_timeline_date}}</span>
+                </a>
+            </div>
         </li>
-    	</ul>
-    </aside>
+    </ul>
+</section>
 
-    <div class="item" ui-view></div>
+<section class="container" ui-view></section>

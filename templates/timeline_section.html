@@ -1,11 +1,12 @@
-    <aside>
-        <h2>Timeline</h2>
-    	<ul>
-        <li ng-repeat="item in sectionTimeline" class="timeline-{{item.field_section}}-{{item.nid}} {{item.field_type}}">
-          <a href="#/timeline/{{item.field_section}}/{{item.nid}}">
-            <h3>{{item.title}}</h3>
-          </a>
-        </li>
-    	</ul>
-    </aside>
-    
+<h1 page-title>Timeline</h1>
+<ul class="timeline-list personal">
+    <li ng-repeat="item in sectionTimeline">
+        <div class="timeline-link personal">
+            <a href="#/timeline/{{item.field_section}}/{{item.nid}}">
+                <h2 class="headline">{{item.title}}</h2>
+                <p>{{item.field_summary}}</p>
+                <span>{{item.field_timeline_date}}</span>
+            </a>
+        </div>
+    </li>
+</ul>

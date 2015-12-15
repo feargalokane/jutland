@@ -18,25 +18,33 @@ angular.module('jutlandApp', ['ui.router', 'HomeController', 'GameController','T
         controller: 'HomeController',
         templateUrl: 'templates/home.html',
         onEnter: function(){
-            angular.element(document.getElementsByTagName('body')[0]).addClass("home-page");   
+            angular.element(document.getElementsByTagName('body')[0]).addClass("front");
+            angular.element(document.getElementsByTagName('body')[0]).removeClass("inner");      
         },        
         onExit: function(){
-            angular.element(document.getElementsByTagName('body')[0]).removeClass("home-page");   
+            angular.element(document.getElementsByTagName('body')[0]).removeClass("front");
+            angular.element(document.getElementsByTagName('body')[0]).addClass("inner");   
         }        
       })
       .state('timelineSectionsHome', {
         url: '/timelineSectionsHome',
-        templateUrl: 'templates/timeline_home.html'
+        templateUrl: 'templates/timeline_home.html',
+        onEnter: function(){
+            angular.element(document.getElementsByTagName('body')[0]).addClass("man");   
+        },        
+        onExit: function(){
+            angular.element(document.getElementsByTagName('body')[0]).removeClass("man");   
+        }      
       })
       .state('timelineSections', {
         url: '/timelineSections/:sectionId',
         templateUrl: 'templates/timeline_sections.html',
         controller:'TimelineSectionsController',
          onEnter: function($stateParams){
-            angular.element(document.getElementsByTagName('body')[0]).addClass("section-"+$stateParams.sectionId);   
+            angular.element(document.getElementsByTagName('body')[0]).addClass("early");   
         },        
         onExit: function($stateParams){
-            angular.element(document.getElementsByTagName('body')[0]).removeClass("section-"+$stateParams.sectionId);   
+            angular.element(document.getElementsByTagName('body')[0]).removeClass("early");   
         }      
       })      
       .state('timelineSections.section', {
@@ -48,13 +56,11 @@ angular.module('jutlandApp', ['ui.router', 'HomeController', 'GameController','T
         url: '/timeline/:sectionId/:timelineId',
         templateUrl: 'templates/timeline.html',
         controller:'TimelineController',
-          onEnter: function($stateParams){
-            angular.element(document.getElementsByTagName('body')[0]).addClass("section-"+$stateParams.sectionId);   
-            angular.element(document.getElementsByTagName('body')[0]).addClass("timeline-"+$stateParams.timelineId);   
+         onEnter: function($stateParams){
+            angular.element(document.getElementsByTagName('body')[0]).addClass("early");   
         },        
         onExit: function($stateParams){
-            angular.element(document.getElementsByTagName('body')[0]).removeClass("section-"+$stateParams.sectionId);
-            angular.element(document.getElementsByTagName('body')[0]).removeClass("timeline-"+$stateParams.timelineId);     
+            angular.element(document.getElementsByTagName('body')[0]).removeClass("early");   
         }      
       })
       .state('timeline.item', {

@@ -1,11 +1,11 @@
-    <h4>{{item.nid}}</h4>
-    <h4>{{item.title}}</h4>
-    <h4>{{item.field_summary}}</h4> 
-    <h4>{{item.field_content }}</h4>
-    <h4>{{item.field_timeline_date }}</h4>
-    <h4>{{item.view_node }}</h4>
-    <h4>{{item.field_section}}</h4>
-    <h4>{{item.field_type }}</h4>
-    <h4>{{item.ImageTitle }}</h4>
-    <h4>{{item.ImageFileName}}</h4>
-    <h4>{{item.ImageAltText}}</h4>
+    <div class="media">
+        <!--<h4>{{item.ImageFileName}}</h4>
+        <h4>{{item.ImageAltText}}</h4>-->        
+        <img src="/img/600-600.png" alt="Square Thumbnail">
+    </div>
+    <div class="content">
+        <h1 class="{{item.title}}"></h1>
+        <p>
+            {{item.field_content}}
+        </p>
+    </div>
