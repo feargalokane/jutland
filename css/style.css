@@ -100,7 +100,7 @@ header, footer, nav, section, article, hgroup, figure {
 }
 
 /* line 29, scss/generic/_reset.scss */
-.early .timeline {
+.category .timeline {
   display: block;
 }
 
@@ -1641,16 +1641,16 @@ td {
 
 /* Homepage */
 /* line 4, scss/objects/_man.scss */
-.man .navigation li:nth-child(1) {
+.section .navigation li:nth-child(1) {
   background: #8fb7c3;
 }
 /* line 6, scss/objects/_man.scss */
-.man .navigation li:nth-child(1) h2.headline {
+.section .navigation li:nth-child(1) h2.headline {
   color: #000;
   font-weight: 700;
 }
 /* line 13, scss/objects/_man.scss */
-.man .secondary {
+.section .secondary {
   width: 1800px;
   height: 880px;
   position: relative;
@@ -1660,56 +1660,56 @@ td {
   transition: all .25s ease;
 }
 /* line 22, scss/objects/_man.scss */
-.man .secondary li {
+.section .secondary li {
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
   transition: all .25s ease;
 }
 /* line 27, scss/objects/_man.scss */
-.man .secondary li .round {
+.section .secondary li .round {
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
   transition: all .25s ease;
 }
 /* line 34, scss/objects/_man.scss */
-.man .secondary li:nth-child(1) {
+.section .secondary li:nth-child(1) {
   position: absolute;
   top: 150px;
   left: 50px;
 }
 /* line 40, scss/objects/_man.scss */
-.man .secondary li:nth-child(2) {
+.section .secondary li:nth-child(2) {
   position: absolute;
   top: 490px;
   left: 320px;
 }
 /* line 46, scss/objects/_man.scss */
-.man .secondary li:nth-child(3) {
+.section .secondary li:nth-child(3) {
   position: absolute;
   top: 120px;
   left: 580px;
 }
 /* line 52, scss/objects/_man.scss */
-.man .secondary li:nth-child(4) {
+.section .secondary li:nth-child(4) {
   position: absolute;
   top: 520px;
   left: 850px;
 }
 /* line 58, scss/objects/_man.scss */
-.man .secondary li:nth-child(5) {
+.section .secondary li:nth-child(5) {
   position: absolute;
   top: 100px;
   left: 1120px;
 }
 /* line 64, scss/objects/_man.scss */
-.man .secondary li:nth-child(6) {
+.section .secondary li:nth-child(6) {
   position: absolute;
   top: 490px;
   left: 1380px;
 }
 
 /* line 73, scss/objects/_man.scss */
-.man.active .secondary {
+.section.active .secondary {
   position: absolute;
   top: 48px;
   left: 2%;
@@ -1721,7 +1721,7 @@ td {
   transition: all .25s ease;
 }
 /* line 84, scss/objects/_man.scss */
-.man.active .secondary li {
+.section.active .secondary li {
   position: relative;
   width: 100%;
   display: block;
@@ -1733,7 +1733,7 @@ td {
   transition: all .25s ease;
 }
 /* line 96, scss/objects/_man.scss */
-.man.active .secondary li .round {
+.section.active .secondary li .round {
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
   transition: all .25s ease;
@@ -1742,7 +1742,7 @@ td {
   padding: 5px;
 }
 /* line 105, scss/objects/_man.scss */
-.man.active .secondary li .headline {
+.section.active .secondary li .headline {
   margin: 0;
   font-size: 20px;
   font-weight: 400;
@@ -1757,19 +1757,19 @@ td {
 
 /* Homepage */
 /* line 5, scss/objects/_early.scss */
-.early .navigation li:nth-child(1),
-.birth .navigation li:nth-child(1) {
+.category .navigation li:nth-child(1),
+.item .navigation li:nth-child(1) {
   background: #8fb7c3;
 }
 /* line 7, scss/objects/_early.scss */
-.early .navigation li:nth-child(1) h2.headline,
-.birth .navigation li:nth-child(1) h2.headline {
+.category .navigation li:nth-child(1) h2.headline,
+.item .navigation li:nth-child(1) h2.headline {
   color: #000;
   font-weight: 700;
 }
 /* line 14, scss/objects/_early.scss */
-.early .secondary,
-.birth .secondary {
+.category .secondary,
+.item .secondary {
   position: absolute;
   top: 48px;
   left: 2%;
@@ -1781,8 +1781,8 @@ td {
   transition: all .25s ease;
 }
 /* line 25, scss/objects/_early.scss */
-.early .secondary li,
-.birth .secondary li {
+.category .secondary li,
+.item .secondary li {
   position: relative;
   width: 100%;
   display: block;
@@ -1794,8 +1794,8 @@ td {
   transition: all .25s ease;
 }
 /* line 37, scss/objects/_early.scss */
-.early .secondary li .round,
-.birth .secondary li .round {
+.category .secondary li .round,
+.item .secondary li .round {
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
   transition: all .25s ease;
@@ -1804,8 +1804,8 @@ td {
   padding: 5px;
 }
 /* line 46, scss/objects/_early.scss */
-.early .secondary li .headline,
-.birth .secondary li .headline {
+.category .secondary li .headline,
+.item .secondary li .headline {
   margin: 0;
   font-size: 20px;
   font-weight: 400;
@@ -1818,13 +1818,13 @@ td {
   line-height: 1.2;
 }
 /* line 61, scss/objects/_early.scss */
-.early .secondary li:nth-child(1) .headline,
-.birth .secondary li:nth-child(1) .headline {
+.category .secondary li:nth-child(1) .headline,
+.item .secondary li:nth-child(1) .headline {
   font-weight: 600;
 }
 /* line 67, scss/objects/_early.scss */
-.early .timeline,
-.birth .timeline {
+.category .timeline,
+.item .timeline {
   position: absolute;
   top: 50px;
   left: 25%;
@@ -1836,67 +1836,67 @@ td {
   overflow-x: auto;
 }
 /* line 78, scss/objects/_early.scss */
-.early .timeline h1,
-.birth .timeline h1 {
+.category .timeline h1,
+.item .timeline h1 {
   text-align: center;
   text-transform: uppercase;
   font-size: 36px;
   font-weight: 600;
 }
 /* line 85, scss/objects/_early.scss */
-.early .timeline .timeline-list,
-.birth .timeline .timeline-list {
+.category .timeline .timeline-list,
+.item .timeline .timeline-list {
   position: absolute;
   height: 400px;
 }
 /* line 89, scss/objects/_early.scss */
-.early .timeline .timeline-list li,
-.birth .timeline .timeline-list li {
+.category .timeline .timeline-list li,
+.item .timeline .timeline-list li {
   position: absolute;
   bottom: 0px;
 }
 /* line 92, scss/objects/_early.scss */
-.early .timeline .timeline-list li:nth-child(1),
-.birth .timeline .timeline-list li:nth-child(1) {
+.category .timeline .timeline-list li:nth-child(1),
+.item .timeline .timeline-list li:nth-child(1) {
   left: 0;
 }
 /* line 96, scss/objects/_early.scss */
-.early .timeline .timeline-list li:nth-child(2),
-.birth .timeline .timeline-list li:nth-child(2) {
+.category .timeline .timeline-list li:nth-child(2),
+.item .timeline .timeline-list li:nth-child(2) {
   left: 400px;
 }
 /* line 100, scss/objects/_early.scss */
-.early .timeline .timeline-list li:nth-child(3),
-.birth .timeline .timeline-list li:nth-child(3) {
+.category .timeline .timeline-list li:nth-child(3),
+.item .timeline .timeline-list li:nth-child(3) {
   left: 950px;
 }
 /* line 104, scss/objects/_early.scss */
-.early .timeline .timeline-list li:nth-child(4),
-.birth .timeline .timeline-list li:nth-child(4) {
+.category .timeline .timeline-list li:nth-child(4),
+.item .timeline .timeline-list li:nth-child(4) {
   left: 1400px;
 }
 /* line 108, scss/objects/_early.scss */
-.early .timeline .timeline-list li .timeline-link,
-.birth .timeline .timeline-list li .timeline-link {
+.category .timeline .timeline-list li .timeline-link,
+.item .timeline .timeline-list li .timeline-link {
   display: block;
   width: 350px;
   max-width: 100%;
   background: #f9f9f9;
 }
 /* line 118, scss/objects/_early.scss */
-.early .timeline .timeline-list li .timeline-link h2,
-.birth .timeline .timeline-list li .timeline-link h2 {
+.category .timeline .timeline-list li .timeline-link h2,
+.item .timeline .timeline-list li .timeline-link h2 {
   padding: 10px;
   font-weight: 300;
 }
 /* line 123, scss/objects/_early.scss */
-.early .timeline .timeline-list li .timeline-link p,
-.birth .timeline .timeline-list li .timeline-link p {
+.category .timeline .timeline-list li .timeline-link p,
+.item .timeline .timeline-list li .timeline-link p {
   padding: 10px;
 }
 /* line 127, scss/objects/_early.scss */
-.early .timeline .timeline-list li .timeline-link span,
-.birth .timeline .timeline-list li .timeline-link span {
+.category .timeline .timeline-list li .timeline-link span,
+.item .timeline .timeline-list li .timeline-link span {
   text-align: right;
   display: block;
   padding: 5px 10px;
@@ -1906,52 +1906,52 @@ td {
   border-top: #ddd;
 }
 /* line 140, scss/objects/_early.scss */
-.early .timeline .timeline-list .personal h2,
-.birth .timeline .timeline-list .personal h2 {
+.category .timeline .timeline-list .personal h2,
+.item .timeline .timeline-list .personal h2 {
   background: #6ea2b1;
   border-bottom: 4px solid #6ea2b1;
   color: #fff;
 }
 /* line 148, scss/objects/_early.scss */
-.early .timeline .timeline-list .world h2,
-.birth .timeline .timeline-list .world h2 {
+.category .timeline .timeline-list .world h2,
+.item .timeline .timeline-list .world h2 {
   background: #F89D08;
   border-bottom: 4px solid #F89D08;
   color: #000;
 }
 /* line 156, scss/objects/_early.scss */
-.early .timeline .timeline-list.personal,
-.birth .timeline .timeline-list.personal {
+.category .timeline .timeline-list.personal,
+.item .timeline .timeline-list.personal {
   top: 0;
 }
 /* line 160, scss/objects/_early.scss */
-.early .timeline .timeline-list.world,
-.birth .timeline .timeline-list.world {
+.category .timeline .timeline-list.world,
+.item .timeline .timeline-list.world {
   bottom: 0;
 }
 /* line 163, scss/objects/_early.scss */
-.early .timeline .timeline-list.world li,
-.birth .timeline .timeline-list.world li {
+.category .timeline .timeline-list.world li,
+.item .timeline .timeline-list.world li {
   bottom: inherit;
   top: 0;
 }
 /* line 167, scss/objects/_early.scss */
-.early .timeline .timeline-list.world li:nth-child(1),
-.birth .timeline .timeline-list.world li:nth-child(1) {
+.category .timeline .timeline-list.world li:nth-child(1),
+.item .timeline .timeline-list.world li:nth-child(1) {
   left: 200px;
 }
 /* line 171, scss/objects/_early.scss */
-.early .timeline .timeline-list.world li:nth-child(2),
-.birth .timeline .timeline-list.world li:nth-child(2) {
+.category .timeline .timeline-list.world li:nth-child(2),
+.item .timeline .timeline-list.world li:nth-child(2) {
   left: 900px;
 }
 
 /* line 180, scss/objects/_early.scss */
-.early.inner-active .secondary {
+.category.inner-active .secondary {
   left: -20%;
 }
 /* line 184, scss/objects/_early.scss */
-.early.inner-active .timeline {
+.category.inner-active .timeline {
   left: 2%;
   width: 16%;
   background: #f9f9f9;
@@ -1962,13 +1962,13 @@ td {
   top: 0;
 }
 /* line 194, scss/objects/_early.scss */
-.early.inner-active .timeline h1 {
+.category.inner-active .timeline h1 {
   font-size: 24px;
   margin: 10px;
   border-bottom: 1px solid;
 }
 /* line 200, scss/objects/_early.scss */
-.early.inner-active .timeline .timeline-list {
+.category.inner-active .timeline .timeline-list {
   position: relative;
   top: inherit;
   bottom: inherit;
@@ -1976,7 +1976,7 @@ td {
   margin-bottom: 2em;
 }
 /* line 208, scss/objects/_early.scss */
-.early.inner-active .timeline li {
+.category.inner-active .timeline li {
   position: relative;
   bottom: inherit;
   left: 0 !important;
@@ -1984,41 +1984,41 @@ td {
   width: 98%;
 }
 /* line 215, scss/objects/_early.scss */
-.early.inner-active .timeline li .timeline-link {
+.category.inner-active .timeline li .timeline-link {
   width: 100%;
 }
 /* line 218, scss/objects/_early.scss */
-.early.inner-active .timeline li .timeline-link h2 {
+.category.inner-active .timeline li .timeline-link h2 {
   font-size: 18px;
   background: transparent;
   color: #000;
 }
 /* line 224, scss/objects/_early.scss */
-.early.inner-active .timeline li .timeline-link p {
+.category.inner-active .timeline li .timeline-link p {
   display: none;
 }
 /* line 230, scss/objects/_early.scss */
-.early.inner-active .timeline .timeline-list.personal li {
+.category.inner-active .timeline .timeline-list.personal li {
   border-right: 4px solid #6ea2b1;
 }
 /* line 234, scss/objects/_early.scss */
-.early.inner-active .timeline .timeline-list.world li {
+.category.inner-active .timeline .timeline-list.world li {
   border-right: 4px solid #F89D08;
 }
 
 /* Homepage */
 /* line 4, scss/objects/_birth.scss */
-.birth .navigation li:nth-child(1) {
+.item .navigation li:nth-child(1) {
   background: #8fb7c3;
 }
 /* line 6, scss/objects/_birth.scss */
-.birth .navigation li:nth-child(1) h2.headline {
+.item .navigation li:nth-child(1) h2.headline {
   color: #000;
   font-weight: 700;
 }
 
 /* line 15, scss/objects/_birth.scss */
-.birth.inner .timeline {
+.item.inner .timeline {
   left: 2%;
   width: 16%;
   background: #f9f9f9;
@@ -2029,13 +2029,13 @@ td {
   top: 0;
 }
 /* line 25, scss/objects/_birth.scss */
-.birth.inner .timeline h1 {
+.item.inner .timeline h1 {
   font-size: 24px;
   margin: 10px;
   border-bottom: 1px solid;
 }
 /* line 31, scss/objects/_birth.scss */
-.birth.inner .timeline .timeline-list {
+.item.inner .timeline .timeline-list {
   position: relative;
   top: inherit;
   bottom: inherit;
@@ -2043,7 +2043,7 @@ td {
   margin-bottom: 2em;
 }
 /* line 39, scss/objects/_birth.scss */
-.birth.inner .timeline li {
+.item.inner .timeline li {
   position: relative;
   bottom: inherit;
   left: 0 !important;
@@ -2051,36 +2051,36 @@ td {
   width: 98%;
 }
 /* line 46, scss/objects/_birth.scss */
-.birth.inner .timeline li .timeline-link {
+.item.inner .timeline li .timeline-link {
   width: 100%;
 }
 /* line 49, scss/objects/_birth.scss */
-.birth.inner .timeline li .timeline-link h2 {
+.item.inner .timeline li .timeline-link h2 {
   font-size: 18px;
   background: transparent;
   color: #000;
 }
 /* line 55, scss/objects/_birth.scss */
-.birth.inner .timeline li .timeline-link p {
+.item.inner .timeline li .timeline-link p {
   display: none;
 }
 /* line 61, scss/objects/_birth.scss */
-.birth.inner .timeline .timeline-list.personal li {
+.item.inner .timeline .timeline-list.personal li {
   border-right: 4px solid #6ea2b1;
 }
 /* line 65, scss/objects/_birth.scss */
-.birth.inner .timeline .timeline-list.world li {
+.item.inner .timeline .timeline-list.world li {
   border-right: 4px solid #F89D08;
 }
 /* line 70, scss/objects/_birth.scss */
-.birth.inner .container {
+.item.inner .container {
   position: absolute;
   left: 22%;
   width: 75%;
   height: 900px;
 }
 /* line 76, scss/objects/_birth.scss */
-.birth.inner .container .media {
+.item.inner .container .media {
   float: left;
   max-height: 100%;
   max-width: 800px;
@@ -2088,7 +2088,7 @@ td {
   margin-right: 50px;
 }
 /* line 85, scss/objects/_birth.scss */
-.birth.inner .container .content h1 {
+.item.inner .container .content h1 {
   font-size: 36px;
   text-transform: uppercase;
   margin-bottom: 0.5em;
@@ -2100,7 +2100,7 @@ td {
 }
 
 /* line 98, scss/objects/_birth.scss */
-.birth.inner .container {
+.item.inner .container {
   display: block;
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;

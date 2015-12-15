@@ -1,7 +1,7 @@
 <section class="timeline">
     <a href="#/timelineSections/{{section.TID}}"><h1 class="page-title">{{section.name}}</h1></a>
-    <ul class="timeline-list personal">
-        <li ng-repeat="item in sectionTimeline">
+    <ul class="timeline-list">
+        <li ng-repeat="item in sectionTimeline" id="id-{{item.nid}}">
             <div class="timeline-link personal">
                 <a ui-sref="timeline.item({id: item.nid})" id="item-{{item.nid}}" class="{{item.field_type}}">
                     <h2 class="headline">{{item.title}}</h2>

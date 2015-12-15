@@ -1,4 +1,4 @@
-angular.module('jutlandApp', ['ui.router', 'HomeController', 'GameController','TimelineSectionsController','TimelineSectionController','TimelineController','TimelineItemController','ngAnimate'])
+angular.module('jutlandApp', ['ui.router', 'HomeController', 'GameController', 'TimelineSectionsController', 'TimelineSectionController', 'TimelineController', 'TimelineItemController', 'ngAnimate'])
   .run(function ($http, $rootScope) {
     $http.get('json/timeline_items.json').success(function (data) {
       $rootScope.timelineItems = data;
@@ -17,66 +17,101 @@ angular.module('jutlandApp', ['ui.router', 'HomeController', 'GameController','T
         url: '/home',
         controller: 'HomeController',
         templateUrl: 'templates/home.html',
-        onEnter: function(){
-            angular.element(document.getElementsByTagName('body')[0]).addClass("front");
-            angular.element(document.getElementsByTagName('body')[0]).removeClass("inner");      
-        },        
-        onExit: function(){
-            angular.element(document.getElementsByTagName('body')[0]).removeClass("front");
-            angular.element(document.getElementsByTagName('body')[0]).addClass("inner");   
-        }        
+        onEnter: function () {
+          addBodyClasses(["front"]);
+          removeBodyClasses(["inner"]);
+        },
+        onExit: function () {
+          addBodyClasses(["inner"]);
+          removeBodyClasses(["front"]);
+        }
       })
       .state('timelineSectionsHome', {
+        cache: false,
         url: '/timelineSectionsHome',
         templateUrl: 'templates/timeline_home.html',
-        onEnter: function(){
-            angular.element(document.getElementsByTagName('body')[0]).addClass("man");   
-        },        
-        onExit: function(){
-            angular.element(document.getElementsByTagName('body')[0]).removeClass("man");   
-        }      
+        onEnter: function () {
+          addBodyClasses(["section", "section-1"]);
+        },
+        onExit: function () {
+          removeBodyClasses(["section", "section-1"]);
+        }
       })
       .state('timelineSections', {
+        cache: false,
         url: '/timelineSections/:sectionId',
         templateUrl: 'templates/timeline_sections.html',
-        controller:'TimelineSectionsController',
-         onEnter: function($stateParams){
-            angular.element(document.getElementsByTagName('body')[0]).addClass("early");   
-        },        
-        onExit: function($stateParams){
-            angular.element(document.getElementsByTagName('body')[0]).removeClass("early");   
-        }      
-      })      
+        controller: 'TimelineSectionsController',
+        onEnter: function ($stateParams) {
+          addBodyClasses(["category", "section-1"]);
+        },
+        onExit: function ($stateParams) {
+          removeBodyClasses(["category", "section-1"]);
+        }
+      })
       .state('timelineSections.section', {
+        cache: false,
         url: '/section/:sectionId',
         templateUrl: 'templates/timeline_section.html',
-        controller:'TimelineSectionController'
-      })         
+        controller: 'TimelineSectionController',
+        onEnter: function ($stateParams) {
+          addBodyClasses(["category" + $stateParams.sectionId]);
+        },
+        onExit: function ($stateParams) {
+          removeBodyClasses(["category" + $stateParams.sectionId]);
+        }
+      })
       .state('timeline', {
+        cache: false,
         url: '/timeline/:sectionId/:timelineId',
         templateUrl: 'templates/timeline.html',
-        controller:'TimelineController',
-         onEnter: function($stateParams){
-            angular.element(document.getElementsByTagName('body')[0]).addClass("early");   
-        },        
-        onExit: function($stateParams){
-            angular.element(document.getElementsByTagName('body')[0]).removeClass("early");   
-        }      
+        controller: 'TimelineController',
+        onEnter: function ($stateParams) {
+          addBodyClasses(["category", "item", "category-" + $stateParams.sectionId]);
+        },
+        onExit: function ($stateParams) {
+          removeBodyClasses(["category", "item", "category-" + $stateParams.sectionId]);
+
+        }
       })
       .state('timeline.item', {
+        cache: false,
         url: '/timelineItem/:id',
         templateUrl: 'templates/timelineItem.html',
-        controller:'TimelineItemController'
+        controller: 'TimelineItemController',
+        onEnter: function ($stateParams) {
+          addBodyClasses(["item-" + $stateParams.id]);
+        },
+        onExit: function ($stateParams) {
+          removeBodyClasses(["item-" + $stateParams.id]);
+
+        }
       })
       .state('game', {
+        cache: false,
         url: '/game',
         controller: 'GameController',
-        templateUrl: 'templates/game.html'
+        templateUrl: 'templates/game.html',
+        onEnter: function ($stateParams) {
+          addBodyClasses(["section-3"]);
+        },
+        onExit: function ($stateParams) {
+          removeBodyClasses(["section-3"]);
+
+        }
       })
       .state('mazegame', {
+        cache: false,
         url: '/mazegame',
         templateUrl: 'templates/mazegame.html',
         controller: 'GameController',
+        onEnter: function ($stateParams) {
+          addBodyClasses(["section-3"]);
+        },
+        onExit: function ($stateParams) {
+          removeBodyClasses(["section-3"]);
+
+        }
       });
     $urlRouterProvider.otherwise('/home');
   });
@@ -127,4 +162,16 @@ function getKeys(obj, val) {
     }
   }
   return objects;
+}
+
+function addBodyClasses(classItems) {
+  for (var i = 0, tot = classItems.length; i < tot; i++) {
+    angular.element(document.getElementsByTagName('body')[0]).addClass(classItems[i]);
+  }
+}
+
+function removeBodyClasses(classItems) {
+  for (var i = 0, tot = classItems.length; i < tot; i++) {
+    angular.element(document.getElementsByTagName('body')[0]).removeClass(classItems[i]);
+  }
 }

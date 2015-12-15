@@ -4,6 +4,7 @@ angular.module('TimelineSectionsController', [])
 	$scope.SelectedSectionId = $stateParams.sectionId;  
 
 	angular.element(document).ready(function () {
-		document.getElementById('section-'+$stateParams.sectionId).click();
+		//alert(document.getElementById('category-'+$stateParams.sectionId).outerHTML);
+		document.getElementById('category-'+$stateParams.sectionId+'-link').click();
 	});
 });
