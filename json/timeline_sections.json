@@ -1,21 +1,14 @@
 [
   {
-    "TID" : "4",
-    "name" : "Battle of Jutland",
-    "ImageTitle" : "",
-    "ImageFileName" : "",
-    "ImageAltText" : ""
+      "TID" : "1",
+      "name" : "Early Life",
+      "ImageTitle" : "",
+      "ImageFileName" : "",
+      "ImageAltText" : ""
   },
   {
-    "TID" : "5",
-    "name" : "Capture & Captivity",
-    "ImageTitle" : "",
-    "ImageFileName" : "",
-    "ImageAltText" : ""
-  },
-  {
-    "TID" : "1",
-    "name" : "Early Life",
+    "TID" : "2",
+    "name" : "Life in the Navy",
     "ImageTitle" : "",
     "ImageFileName" : "",
     "ImageAltText" : ""
@@ -28,8 +21,15 @@
     "ImageAltText" : ""
   },
   {
-    "TID" : "2",
-    "name" : "Life in the Navy",
+    "TID" : "4",
+    "name" : "Battle of Jutland",
+    "ImageTitle" : "",
+    "ImageFileName" : "",
+    "ImageAltText" : ""
+  },
+  {
+    "TID" : "5",
+    "name" : "Capture & Captivity",
     "ImageTitle" : "",
     "ImageFileName" : "",
     "ImageAltText" : ""
