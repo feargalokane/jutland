@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    $MAIN CONTENT AREA
+\*------------------------------------*/
+body {
+	min-height: 700px;
+}
+
+[role=main] {
+	padding: $pad-half $pad-half $pad-double;
+	overflow: hidden;
+	@extend .lc;
+	@extend .cf;
+}

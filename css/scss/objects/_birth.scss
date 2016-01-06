@@ -1,0 +1,39 @@
+/* Homepage */
+.item {
+	.navigation {
+		
+	}
+}
+
+.item {
+	.container {
+		position: absolute;
+		left: 22%;
+		width: 75%;
+		height: 900px;
+		display: block;
+
+		.media {
+			float: left;
+			max-height: 100%;
+			max-width: 800px;
+			min-width: 600px;
+			margin-right: 50px;
+		}
+
+		.content {
+			h1 {
+				font-size: 36px;
+				text-transform: uppercase;
+				margin-bottom: 0.5em;
+			}
+		}
+	}
+}
+
+.birth.inner .container {
+	display: block;
+	-webkit-transition: all .25s ease;
+		-moz-transition: all .25s ease;
+		transition: all .25s ease;
+}

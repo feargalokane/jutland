@@ -1,0 +1,185 @@
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+
+.nav {
+	clear: both;
+	overflow: hidden;
+	max-height: 0;
+	
+	a {
+		display: block;
+		padding: $pad;
+		border-top: 1px solid $gray-light-2;
+	}
+
+	&.active {
+		max-height: 40em;
+	}
+
+	@media all and (min-width: $bp-med) {
+		max-height: none;
+		float: right;
+		clear: none;
+
+		li {
+			float: left;
+		}
+
+		a {
+			border: 0;
+		}
+		
+	}
+}
+
+//Pagination
+.pagination {
+	overflow: hidden;
+
+	li {
+		float: left;
+		border-right: 1px solid $gray-light-2;
+
+		&:last-child {
+			border: 0;
+		}
+	}
+
+	a {
+		padding: $pad;
+	}
+}
+
+/* Main Nav */
+body.section-1 ul.section-list .section-link#section-1 {
+	background: $yellow;
+}
+
+body.section-2 ul.section-list .section-link#section-2 {
+	background: $yellow;
+}
+
+body.section-3 ul.section-list .section-link#section-3 {
+	background: $yellow;
+}
+
+/* Section Lists */
+.inner .section-list {
+	li {
+		width: 30%;
+		float: left;
+		text-align: center;
+		margin-right: 5%;
+		margin-bottom: 15px;
+
+		.round {
+			margin: 0 auto;
+		}
+	}
+
+	li:nth-child(3n + 3) {
+		margin-right: 0;
+	}
+}
+
+/* Item Navigation */
+.item-1 #item-1 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-2 #item-2 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-3 #item-3 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-4 #item-4 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-5 #item-5 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-6 #item-6 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-7 #item-7 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-8 #item-8 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-9 #item-9 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-10 #item-10 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-11 #item-11 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-12 #item-12 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-13 #item-13 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-14 #item-14 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-15 #item-15 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-16 #item-16 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-17 #item-17 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-18 #item-18 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-19 #item-19 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-20 #item-20 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-21 #item-21 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-22 #item-22 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-23 #item-23 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-24 #item-24 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-25 #item-25 h2 {
+	background: rgba($blue,0.7);
+}

@@ -67,10 +67,10 @@ angular.module('jutlandApp', ['ui.router', 'HomeController', 'GameController', '
         templateUrl: 'templates/timeline.html',
         controller: 'TimelineController',
         onEnter: function ($stateParams) {
-          addBodyClasses(["category", "item", "category-" + $stateParams.sectionId]);
+          addBodyClasses(["category", "item", "category-" + $stateParams.sectionId, "section-1"]);
         },
         onExit: function ($stateParams) {
-          removeBodyClasses(["category", "item", "category-" + $stateParams.sectionId]);
+          removeBodyClasses(["category", "item", "category-" + $stateParams.sectionId, "section-1"]);
 
         }
       })

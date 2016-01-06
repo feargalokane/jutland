@@ -327,9 +327,9 @@
   {
     "nid" : "9",
     "title" : "Britain Declares War on Germany",
-    "field_summary" : "",
+    "field_summary" : "Britain declares war on 04 August 1914.",
     "field_content" : "",
-    "field_timeline_date" : "04th August 1914",
+    "field_timeline_date" : "1914",
     "view_node" : "view",
     "field_section" : "3",
     "field_type" : "8",

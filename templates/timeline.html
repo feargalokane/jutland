@@ -3,7 +3,7 @@
     <ul class="timeline-list">
         <li ng-repeat="item in sectionTimeline" id="id-{{item.nid}}">
             <div class="timeline-link personal">
-                <a ui-sref="timeline.item({id: item.nid})" id="item-{{item.nid}}" class="{{item.field_type}}">
+                <a ui-sref="timeline.item({id: item.nid})" id="item-{{item.nid}}" class="type-{{item.field_type}}">
                     <h2 class="headline">{{item.title}}</h2>
                     <p>{{item.field_summary}}</p>
                     <span>{{item.field_timeline_date}}</span>
