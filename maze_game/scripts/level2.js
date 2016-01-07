@@ -1,14 +1,14 @@
 define([], function () {
     var level = {
         id: 2,
-        name:"The Forest",
-        description:"You have to help your hero find his way out of the forest now",        
+        name:"Level 2",
+        description:"Escape Level 2",        
         startingPoint: { x: 2, y: 30 },
         startingDirection: 4.712388975,
         size: 32,
-        wallTexture: { path: "assets/wall_texture_level_2.jpg", width: 700, height: 524 },
-        skybox: { path: "assets/bg_level_2.png", width: 2000, height: 750 },
-        playerWeapon: { path: "assets/goo_hand.png", width: 320, height: 332 },
+        wallTexture: { path: "assets/wall_texture_level_1.jpg", width: 700, height: 524 },
+        skybox: { path: "assets/bg_level_1.png", width: 2000, height: 750 },
+        playerWeapon: { path: "assets/empty.png", width: 320, height: 332 },
         walls: [
 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1,
 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
