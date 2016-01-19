@@ -2,11 +2,11 @@
     <a href="#/timelineSections/{{section.TID}}"><h1 class="page-title">{{section.name}}</h1></a>
     <ul class="timeline-list">
         <li ng-repeat="item in sectionTimeline" id="id-{{item.nid}}">
-            <div class="timeline-link personal">
+            <div class="timeline-link">
                 <a ui-sref="timeline.item({id: item.nid})" id="item-{{item.nid}}" class="type-{{item.field_type}}">
                     <h2 class="headline">{{item.title}}</h2>
-                    <p>{{item.field_summary}}</p>
                     <span>{{item.field_timeline_date}}</span>
+                    <p>{{item.field_summary}}</p>
                 </a>
             </div>
         </li>

@@ -1,0 +1,31 @@
+/* Scrollbars */
+::-webkit-scrollbar {
+      width: 21px;
+    	height: 21px;
+    	border-radius: 4px;
+    	border-color: rgba($blue-light,0.8);
+} /* this targets the default scrollbar (compulsory) */
+
+::-webkit-scrollbar:after {
+	content: "Scrollbar present - do something Feargal";
+}
+
+::-webkit-scrollbar-track {
+      background-color: rgba($blue-light,0.4);
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-webkit-scrollbar-thumb {
+      background-color: rgba($blue-light,0.4); 
+      height: 21px; 
+      background-image: url('/img/slider.png');
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+} /* this will style the thumb, ignoring the track */
+ 
+::-webkit-scrollbar-button {
+      background-color: #7c2929;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+::-webkit-scrollbar-corner {
+      background-color: black;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */

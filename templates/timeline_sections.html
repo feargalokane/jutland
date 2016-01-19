@@ -1,4 +1,5 @@
 <section>
+    <h1 class="title">{{categoryName}}</h1>
     <ul class="section-list secondary">
         <li ng-repeat="item in timelineSections" id="category-{{item.TID}}">
             <div class="section-link">
@@ -6,7 +7,7 @@
                     <div class="round">
                         <img src="/img/90-90.png" alt="Post Thumbnail">
                     </div>
-                    <h2 class="headline">{{item.name}}</h2>
+                    <h2 class="headline"><span>{{item.name}}</span></h2>
                 </a>
             </div>
         </li>

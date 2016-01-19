@@ -1,8 +1,29 @@
 /*------------------------------------*\
     $MAIN CONTENT AREA
 \*------------------------------------*/
+html {
+	height: 100%;
+	overflow: hidden;
+}
+
 body {
 	min-height: 700px;
+	height: 100%;
+	overflow: hidden;
+  background: url("/img/map.png") 50% 50% no-repeat;
+  background-size: cover;
+
+  &:after {
+    content: " ";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    position: absolute;
+    /*background: rgba(255,255,255,0.25);*/
+    z-index: -1;
+  }
 }
 
 [role=main] {

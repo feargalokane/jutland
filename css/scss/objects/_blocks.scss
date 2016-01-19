@@ -183,23 +183,29 @@
 	}
 
 	.headline {
-		font-weight: 600;
+		font-weight: 200;
     font-size: 36px;
-    margin-top: 1em;
+    margin-top: -30px;
     text-transform: uppercase;
-    color: #000;
+    color: $blue;
+    height: 70px;
+    line-height: 70px;
+    border: 1px solid $blue;
+    background: $white;
+    position: relative;
 	}
 }
 
 .inner {
-	.section-link {
-		.round {
-			width: 300px;
-		}
-
+	.secondary .section-link {
 		.headline {
 			font-weight: 400;
-			font-size: 24px;
+			font-size: 20px;
+			min-width: 60%;
+	    margin-left: auto;
+	    margin-right: auto;
+	    display: inline-block;
+	    padding: 0 30px;
 		}
 	}
 }
