@@ -1216,48 +1216,53 @@ body:after {
 /*------------------------------------*\
     $TEXT Styles
 \*------------------------------------*/
-/* line 2, scss/objects/_text.scss */
+/* line 1, scss/objects/_text.scss */
+body {
+  font-family: "brandon-grotesque",sans-serif;
+}
+
+/* line 6, scss/objects/_text.scss */
 .intro {
   font-size: 1.0625em;
   font-weight: bold;
 }
 
-/* line 8, scss/objects/_text.scss */
+/* line 12, scss/objects/_text.scss */
 .pullquote {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 1.4375em;
 }
 
-/* line 14, scss/objects/_text.scss */
+/* line 18, scss/objects/_text.scss */
 .caption {
   font-style: italic;
 }
 
-/* line 20, scss/objects/_text.scss */
+/* line 24, scss/objects/_text.scss */
 .text a {
   text-decoration: underline;
 }
-/* line 24, scss/objects/_text.scss */
+/* line 28, scss/objects/_text.scss */
 .text ul {
   list-style: disc;
   margin: 0 0 1em 1.2em;
 }
-/* line 28, scss/objects/_text.scss */
+/* line 32, scss/objects/_text.scss */
 .text ul ul {
   margin-bottom: 0;
 }
-/* line 33, scss/objects/_text.scss */
+/* line 37, scss/objects/_text.scss */
 .text ol {
   list-style: decimal;
   margin: 0 0 1em 1.5em;
 }
-/* line 37, scss/objects/_text.scss */
+/* line 41, scss/objects/_text.scss */
 .text ol ol {
   margin-bottom: 0;
 }
 
 /* Site Title */
-/* line 44, scss/objects/_text.scss */
+/* line 48, scss/objects/_text.scss */
 .site-title {
   text-transform: uppercase;
   color: #000;
@@ -1266,9 +1271,10 @@ body:after {
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
   transition: all .25s ease;
+  font-family: "brandon-grotesque",sans-serif;
 }
 
-/* line 54, scss/objects/_text.scss */
+/* line 59, scss/objects/_text.scss */
 .title {
   font-size: 36px;
   font-weight: 200;
@@ -1285,8 +1291,9 @@ body:after {
   transition: all .25s ease;
   text-align: right;
   box-sizing: border-box;
+  font-family: "brandon-grotesque",sans-serif;
 }
-/* line 71, scss/objects/_text.scss */
+/* line 77, scss/objects/_text.scss */
 .title:after {
   content: " ";
   height: 16px;
@@ -1877,33 +1884,23 @@ body:after {
   font-size: 36px;
   font-weight: 200;
   text-transform: uppercase;
-  color: #00A7E1;
+  color: #000;
   position: absolute;
-  left: 0px;
-  top: 90px;
-  border-bottom: 1px solid #00A7E1;
-  padding: 10px 40px 10px 300px;
-  width: 60%;
+  left: calc(50% - 300px);
+  top: 780px;
+  border: 1px solid #000;
+  padding: 10px 40px;
+  width: 600px;
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
   transition: all .25s ease;
-  text-align: right;
+  text-align: center;
   box-sizing: border-box;
+  margin: 0 auto;
+  left: 660px;
+  background: #fff;
 }
-/* line 20, scss/objects/_home.scss */
-.front .site-title:after {
-  content: " ";
-  height: 16px;
-  width: 16px;
-  border: 2px solid #F9A704;
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  right: -10px;
-  bottom: -10px;
-  background: white;
-}
-/* line 34, scss/objects/_home.scss */
+/* line 24, scss/objects/_home.scss */
 .front .section-list {
   position: relative;
   margin: 0 auto;
@@ -1913,7 +1910,7 @@ body:after {
   margin: 350px 0 0 300px;
   overflow: hidden;
 }
-/* line 43, scss/objects/_home.scss */
+/* line 33, scss/objects/_home.scss */
 .front .section-list li {
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
@@ -1922,19 +1919,19 @@ body:after {
   width: 320px;
   margin-right: 180px;
 }
-/* line 51, scss/objects/_home.scss */
+/* line 41, scss/objects/_home.scss */
 .front .section-list li .round {
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
   transition: all .25s ease;
   width: 100%;
 }
-/* line 67, scss/objects/_home.scss */
+/* line 57, scss/objects/_home.scss */
 .front .section-list li:nth-child(3) {
   margin-right: 0;
 }
 
-/* line 75, scss/objects/_home.scss */
+/* line 65, scss/objects/_home.scss */
 .front.active .site-title,
 .inner .site-title {
   -webkit-transition: all .25s ease;
@@ -2349,12 +2346,12 @@ body:after {
 .category .timeline .timeline-list li.type-8 span:after {
   content: " ";
   display: block;
-  border-top: 2px solid #9B9B9B;
-  width: 53px;
-  transform: rotate(90deg);
-  top: 28px;
+  border-right: 2px solid #9B9B9B;
+  width: 1px;
+  top: 0;
   position: relative;
-  left: 13px;
+  left: 35px;
+  height: 53px;
 }
 /* line 315, scss/objects/_early.scss */
 .category .timeline .timeline-list .world h2 {
@@ -2526,19 +2523,31 @@ body:after {
 ::-webkit-scrollbar {
   width: 21px;
   height: 21px;
+  border-radius: 4px;
+  border-color: rgba(114, 210, 243, 0.3);
 }
 
 /* this targets the default scrollbar (compulsory) */
-/* line 7, scss/objects/_scrollbars.scss */
+/* line 9, scss/objects/_scrollbars.scss */
+::-webkit-scrollbar:after {
+  content: "Scrollbar present - do something Feargal";
+}
+
+/* line 13, scss/objects/_scrollbars.scss */
 ::-webkit-scrollbar-track {
-  background-color: rgba(114, 210, 243, 0.4);
+  background-color: rgba(114, 210, 243, 0.2);
 }
 
 /* the new scrollbar will have a flat appearance with the set background color */
-/* line 11, scss/objects/_scrollbars.scss */
+/* line 17, scss/objects/_scrollbars.scss */
+::-webkit-scrollbar-track:before {
+  display: block;
+  content: "Start";
+}
+
+/* line 22, scss/objects/_scrollbars.scss */
 ::-webkit-scrollbar-thumb {
-  background-color: transparent;
-  width: 57px;
+  background-color: rgba(114, 210, 243, 0.4);
   height: 21px;
   background-image: url("/img/slider.png");
   background-position: 50% 50%;
@@ -2546,13 +2555,13 @@ body:after {
 }
 
 /* this will style the thumb, ignoring the track */
-/* line 20, scss/objects/_scrollbars.scss */
+/* line 30, scss/objects/_scrollbars.scss */
 ::-webkit-scrollbar-button {
   background-color: #7c2929;
 }
 
 /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
-/* line 24, scss/objects/_scrollbars.scss */
+/* line 34, scss/objects/_scrollbars.scss */
 ::-webkit-scrollbar-corner {
   background-color: black;
 }

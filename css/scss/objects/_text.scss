@@ -1,3 +1,7 @@
+body {
+	font-family: "brandon-grotesque",sans-serif;
+}
+
 //Intro text
 .intro {
 	font-size: $font-size-med-2;
@@ -49,6 +53,7 @@
 		-webkit-transition: all .25s ease;
     -moz-transition: all .25s ease;
     transition: all .25s ease;
+    font-family: "brandon-grotesque",sans-serif;
 	}
 
 .title {
@@ -67,6 +72,7 @@
     transition: all .25s ease;
     text-align: right;
     box-sizing: border-box;
+    font-family: "brandon-grotesque",sans-serif;
 
     &:after {
     	content: " ";

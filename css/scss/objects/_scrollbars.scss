@@ -3,7 +3,7 @@
       width: 21px;
     	height: 21px;
     	border-radius: 4px;
-    	border-color: rgba($blue-light,0.8);
+    	border-color: rgba($blue-light,0.3);
 } /* this targets the default scrollbar (compulsory) */
 
 ::-webkit-scrollbar:after {
@@ -11,8 +11,13 @@
 }
 
 ::-webkit-scrollbar-track {
-      background-color: rgba($blue-light,0.4);
+      background-color: rgba($blue-light,0.2);
 } /* the new scrollbar will have a flat appearance with the set background color */
+
+::-webkit-scrollbar-track:before {
+	display: block;
+	content: "Start";
+}
  
 ::-webkit-scrollbar-thumb {
       background-color: rgba($blue-light,0.4); 

@@ -2,33 +2,23 @@
 .front {
 	.site-title {
 		font-size: 36px;
-		font-weight: 200;
-		text-transform: uppercase;
-		color: $blue;
-		position: absolute;
-		left: 0px;
-		top: 90px;
-		border-bottom: 1px solid $blue;
-		padding: 10px 40px 10px 300px;
-		width: 60%;
-		-webkit-transition: all .25s ease;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #000;
+    position: absolute;
+    left: calc(50% - 300px);
+    top: 780px;
+    border: 1px solid #000;
+    padding: 10px 40px;
+    width: 600px;
+    -webkit-transition: all .25s ease;
     -moz-transition: all .25s ease;
     transition: all .25s ease;
-    text-align: right;
+    text-align: center;
     box-sizing: border-box;
-
-    &:after {
-    	content: " ";
-	    height: 16px;
-	    width: 16px;
-	    border: 2px solid $yellow;
-	    border-radius: 50%;
-	    display: block;
-	    position: absolute;
-	    right: -10px;
-	    bottom: -10px;
-	    background: white;
-    }
+    margin: 0 auto;
+    left: 660px;
+    background: #fff;
 	}
 
 	.section-list {
