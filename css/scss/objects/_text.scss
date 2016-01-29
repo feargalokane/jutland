@@ -1,5 +1,5 @@
 body {
-	font-family: "brandon-grotesque",sans-serif;
+	font-family: $font;
 }
 
 //Intro text
@@ -53,37 +53,35 @@ body {
 		-webkit-transition: all .25s ease;
     -moz-transition: all .25s ease;
     transition: all .25s ease;
-    font-family: "brandon-grotesque",sans-serif;
 	}
 
 .title {
-		font-size: 36px;
-		font-weight: 200;
-		text-transform: uppercase;
-		color: $blue;
-		position: absolute;
-		left: 0px;
-		top: 90px;
-		border-bottom: 1px solid $blue;
-		padding: 10px 40px 10px 300px;
-		width: 60%;
-		-webkit-transition: all .25s ease;
-    -moz-transition: all .25s ease;
-    transition: all .25s ease;
-    text-align: right;
-    box-sizing: border-box;
-    font-family: "brandon-grotesque",sans-serif;
+	font-size: 36px;
+	font-weight: 200;
+	text-transform: uppercase;
+	color: $blue;
+	position: absolute;
+	left: 0px;
+	top: 90px;
+	border-bottom: 1px solid $blue;
+	padding: 10px 40px 10px 300px;
+	width: 60%;
+	-webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  transition: all .25s ease;
+  text-align: right;
+  box-sizing: border-box;
 
-    &:after {
-    	content: " ";
-	    height: 16px;
-	    width: 16px;
-	    border: 2px solid $yellow;
-	    border-radius: 50%;
-	    display: block;
-	    position: absolute;
-	    right: -10px;
-	    bottom: -9px;
-	    background: white;
-    }
-	}
+  &:after {
+  	content: " ";
+    height: 16px;
+    width: 16px;
+    border: 2px solid $yellow;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    right: -10px;
+    bottom: -9px;
+    background: white;
+  }
+}

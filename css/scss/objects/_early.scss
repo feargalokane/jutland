@@ -27,6 +27,7 @@
 	    content: " ";
 	    display: block;
 	    height: 100%;
+	    height: calc(100% + 40px);
 	    position: absolute;
 	    left: 59px;
 	    top: -40px;
@@ -40,7 +41,7 @@
 	    border-radius: 50%;
 	    display: block;
 	    position: absolute;
-	    top: 0;
+	    bottom: 0;
 	    left: 50px;
 	    background: white;
 		}
@@ -55,6 +56,19 @@
     	-moz-transition: all .25s ease;
     	transition: all .25s ease;
     	margin: 0;
+
+    	&:first-child:before {
+		    content: " ";
+		    height: 16px;
+		    width: 16px;
+		    border: 2px solid #F9A704;
+		    border-radius: 50%;
+		    display: block;
+		    position: absolute;
+		    top: -40px;
+		    left: 50px;
+		    background: white;
+			}
 
     	.section-link {
     		a {
@@ -344,19 +358,19 @@
 }
 
 .category.item {
-	.secondary {
-		left: -20%;
-	}
-
 	.timeline {
-		left: 2%;
-		width: 16%;
+		position: absolute;
+		top: 200px;
+		bottom: 60px;
+		left: 60px;
+		width: 340px;
+		height: calc(100% - 290px);
 		background: transparent;
 		-webkit-transition: all .25s ease;
 		-moz-transition: all .25s ease;
 		transition: all .25s ease;
 		overflow-x: inherit;
-		top: 0;
+		overflow-y: auto;
 
 		h1 {
 			font-size: 24px;
@@ -365,79 +379,122 @@
 		}
 
 		.timeline-list {
-			position: relative;
-			top: inherit;
-			bottom: inherit;
-			height: auto;
-			margin-bottom: 2em;
-	    overflow: hidden;
-		  max-height: 800px;
-		  overflow-y: auto;
-			
-			&:before {
-		    content: " ";
+			position: absolute;
+	    height: auto;
+	    margin-left: 60px;
+	    border-left: 2px solid $yellow;
+	    padding-top: 50px;
+	    padding-bottom: 50px;
+
+			&:before,
+			&:after {
+				content: " ";
+		    height: 16px;
+		    width: 16px;
+		    border: 2px solid $yellow;
+		    border-radius: 50%;
 		    display: block;
-		    height: 100%;
-		    margin-left: 0;
-		    border-top: 0;
-		    border-left: 1px solid #666;
 		    position: absolute;
-		    top: 0;
-		    left: 53px;
+		    top: 0px;
+		    left: 49px;
+		    background: white;
 			}
-		}
 
-		li {
-			position: relative;
-			bottom: inherit;
-			left: 0 !important;
-			margin: 0 1%;
-			width: 98%;
+			&:after {
+				top: inherit;
+				bottom: 0;
+		    left: -11px;
+		    background: white;
+			}
 
-			.timeline-link {
-				width: 100%;
-				background: transparent;
-			
-				h2 {
-					font-size: 18px;
+			li {
+				position: relative;
+				bottom: inherit;
+				left: 0 !important;
+				margin: 0 1% 10px -43px;
+				width: 98%;
+				border: 0;
+
+				.timeline-link {
+					width: 100%;
 					background: transparent;
-					color: $black;
-					margin-left: 50px;
-					padding-left: 20px;
-					text-align: right;
-				}
+				
+					h2 {
+						font-size: 18px;
+						background: transparent;
+						color: $black;
+						margin-left: 50px;
+						padding-left: 20px;
+						text-align: right;
+					}
 
-				p {
+					p {
+						display: none;
+					}
+				}
+			}
+
+			li a.type-8 {
+				pointer-events: none !important;
+
+				h2, p {
 					display: none;
 				}
+
+				span {
+					font-size: 20px;
+					background: $white;
+					border-radius: 50%;
+			    width: 80px;
+			    height: 80px;
+			    line-height: 74px;
+			    text-align: center;
+			    color: $grey;
+			    border: 3px solid $grey;
+
+			    &:after {
+			    	display: none;
+			    }
+				}
 			}
-		}
 
+			li a.type-7 {
+				h2 {
+					background: $blue-light;
+					color: $white;
+					margin-left: 100px;
+					padding-left: 20px;
+					text-align: left;
 
+					&:before {
+						content: " ";
+				    height: 16px;
+				    width: 16px;
+				    border: 2px solid $blue-light;
+				    background: $blue-light;
+				    border-radius: 50%;
+				    display: block;
+				    position: absolute;
+				    top: calc(50% - 8px);
+				    left: 32px;
+				    background: white;
+					}
 
-		li a.type-8 {
-			pointer-events: none !important;
+					&:after {
+				    content: " ";
+				    display: block;
+				    border-bottom: 2px solid $blue-light;
+				    position: absolute;
+				    width: 50px;
+	    			height: 2px;
+	    			top: 50%;
+	    			left: 50px;
+					}
+				}
 
-			h2, p {
-				display: none;
-			}
-
-			span {
-				font-size: 2em;
-				background: $gray-med;
-				border-radius: 50%;
-		    width: 100px;
-		    height: 100px;
-		    line-height: 92px;
-		    text-align: center;
-		    color: $white;
-		    border: 1px solid $gray-dark;
-		    z-index: 5;
-		    margin-left: 0px;
-
-		    &:after {
-		    	display: none;
-		    }
+				p, span {
+					display: none;
+				}
 			}
 		}
 
@@ -447,6 +504,51 @@
 
 		.timeline-list.world li {
 			border-right: 4px solid $yellow;
+		}
+	}
+
+	.category-title {
+		position: absolute;
+    top: 60px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $blue;
+    line-height: 36px;
+    left: 40px;
+    z-index: 10;
+
+    &:before {
+	    content: " ";
+	    width: 12px;
+	    height: 0px;
+	    border-right: 12px solid #00A7E1;
+	    border-top: 12px solid transparent;
+	    border-bottom: 12px solid transparent;
+	    display: block;
+	    position: relative;
+	    left: 0;
+	    top: 4px;
+	    float: left;
+	    margin-right: 8px;
+    }
+
+    a {
+    	color: $blue;
+    }
+	}
+
+	.container {
+		position: absolute;
+		top: 230px;
+		left: 450px;
+		width: 1380px;
+		height: 725px;
+
+	 	h1 {
+			position: absolute;
+    	left: -450px;
+    	top: -140px;
+    	width: 83.5%;
 		}
 	}
 }

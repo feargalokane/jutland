@@ -22,9 +22,11 @@
 ::-webkit-scrollbar-thumb {
       background-color: rgba($blue-light,0.4); 
       height: 21px; 
-      background-image: url('/img/slider.png');
+      /*background-image: url('/img/slider.png');*/
       background-position: 50% 50%;
       background-repeat: no-repeat;
+      border: 1px solid darken($blue-light,10%);
+      border-radius: 4px;
 } /* this will style the thumb, ignoring the track */
  
 ::-webkit-scrollbar-button {
