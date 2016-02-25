@@ -1,4 +1,5 @@
-angular.module('jutlandApp', ['ui.router', 'HomeController', 'GameController', 'TimelineSectionsController', 'TimelineSectionController', 'TimelineController', 'TimelineItemController', 'ngAnimate'])
+angular.module('jutlandApp', ['ui.router', 'HomeController', 'GameController', 'TimelineSectionsController', 
+                        'TimelineSectionController', 'TimelineController', 'BattleController','BattlePageController','TimelineItemController', 'ngAnimate'])
   .run(function ($http, $rootScope) {
     $http.get('json/timeline_items.json').success(function (data) {
       $rootScope.timelineItems = data;
@@ -7,6 +8,10 @@ angular.module('jutlandApp', ['ui.router', 'HomeController', 'GameController', '
     $http.get('json/timeline_sections.json').success(function (data) {
       $rootScope.timelineSections = data;
     });
+    
+    $http.get('json/battles.json').success(function (data) {
+      $rootScope.battleItems = data;
+    });    
   })
 
   .config(function ($stateProvider, $urlRouterProvider) {
@@ -87,6 +92,47 @@ angular.module('jutlandApp', ['ui.router', 'HomeController', 'GameController', '
 
         }
       })
+      .state('battle', {
+        cache: false,
+        url: '/battle',
+        controller: 'BattleController',
+        templateUrl: 'templates/battle.html',
+        onEnter: function ($stateParams) {
+          addBodyClasses(["section-2"]);
+        },
+        onExit: function ($stateParams) {
+          removeBodyClasses(["section-2"]);
+
+        }
+      })      
+      .state('battlepage', {
+        cache: false,
+        url: '/battlepage/:id',
+        controller: 'BattlePageController',
+        templateUrl: 'templates/battlepage.html',
+        onEnter: function ($stateParams) {
+          addBodyClasses(["section-2"]);
+        },
+        onExit: function ($stateParams) {
+          removeBodyClasses(["section-2"]);
+
+        }
+      })  
+      
+      .state('battlepage.item', {
+        cache: false,
+        url: '/item/:id',
+        controller: 'BattleController',
+        templateUrl: function ($stateParams){
+          return 'templates/battlepage'+$stateParams.id+'.html';
+        },  
+        onEnter: function ($stateParams) {
+          addBodyClasses(["section-2"]);
+        },
+        onExit: function ($stateParams) {
+          removeBodyClasses(["section-2"]);
+        }
+      })  
       .state('game', {
         cache: false,
         url: '/game',
