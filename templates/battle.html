@@ -1,0 +1,15 @@
+<section class="section-1">
+    <h1 class="title">The Battle</h1>
+    <ul class="section-list secondary">
+        <li  ng-repeat="battleItem in battleItems" id="battle-{{battleItem.id}}">
+            <div class="section-link">
+                <a href="#/battlepage/{{battleItem.id}}">
+                    <div class="round">
+                        <img src="/img/260-260.png" alt="Post Thumbnail">
+                    </div>
+                    <h2 class="headline">{{battleItem.title}}</h2>
+                </a>
+            </div>
+        </li>											
+    </ul>
+</section>
