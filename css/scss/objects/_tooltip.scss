@@ -45,11 +45,11 @@
 ::-webkit-scrollbar {
     height: 12px;
     width: 8px;
-    background: darken($white,2%);
+    background: darken($white,5%);
     margin-left: 4px;
 
     &:before {
-    	content: "Scrollbar";
+
     }
 }
 

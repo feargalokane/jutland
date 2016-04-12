@@ -1,11 +1,12 @@
     <h1 class="title">{{item.title}}</h1>
     <div class="media">
-        <!--<h4>{{item.ImageFileName}}</h4>
-        <h4>{{item.ImageAltText}}</h4>-->        
-        <img src="/img/600-600.png" alt="Square Thumbnail">
+        <img src="/img/section-1/{{item.ImageFileName}}" alt="{{item.ImageAltText}}">
     </div>
     <div class="content">
+    		<p class="summary">
+    			{{item.field_summary}}	
+    		</p>
         <p>
-            {{item.field_content}}
+          {{item.field_content}}
         </p>
     </div>

@@ -1,11 +1,11 @@
 <section class="section-1">
-    <h1 class="title">The Man</h1>
+    <h1 class="title">Son of Bangor</h1>
     <ul class="section-list secondary">
         <li ng-repeat="section in timelineSections" class="category-{{section.TID}}">
             <div class="section-link">
                 <a href="#/timelineSections/{{section.TID}}">
                     <div class="round">
-                        <img src="/img/260-260.png" alt="Post Thumbnail">
+                        <img src="/img/{{section.ImageFileName}}" alt="Post Thumbnail">
                     </div>
                     <h2 class="headline">{{section.name}}</h2>
                 </a>
