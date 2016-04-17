@@ -216,6 +216,25 @@ function addBodyClasses(classItems) {
   }
 }
 
+
+  function sendWebQuery(msgType, msgJSON) {
+
+      var data = {
+          message: msgType,
+          payload: msgJSON
+      };
+	  	
+      window.atomicQuery({
+          request: JSON.stringify(data),
+          persistent: false,
+          onSuccess: function(response) { },
+          onFailure: function(error_code, error_message) {
+		      alert("Error Running Game "+error_message);
+              console.log("Error launching game");
+          }
+      });
+  }
+
 function removeBodyClasses(classItems) {
   for (var i = 0, tot = classItems.length; i < tot; i++) {
     angular.element(document.getElementsByTagName('body')[0]).removeClass(classItems[i]);
