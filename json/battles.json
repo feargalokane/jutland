@@ -1,30 +1,37 @@
 [
   {
     "id" : "1",
-    "title" : "Introduction"
+    "title" : "Introduction",
+    "ImageFileName":"battle_01_intro.jpg"
   },
   {
     "id" : "2",
-    "title" : "Why were we fighting"
+    "title" : "Why were we fighting",
+    "ImageFileName":"battle_02_why_we.jpg"
   },
   {
     "id" : "3",
-    "title" : "The Admirals"
+    "title" : "The Admirals",
+    "ImageFileName":"battle_03_admirals.jpg"
   },
   {
     "id" : "4",
-    "title" : "Comparison of the Fleets"
+    "title" : "Comparison of the Fleets",
+    "ImageFileName":"battle_04_fleets.jpg"
   },
   {
     "id" : "5",
-    "title" : "The Battle Action"
+    "title" : "The Battle Action",
+    "ImageFileName":"battle_05_bat_action.jpg"
   },
   {
     "id" : "6",
-    "title" : "Losses"
+    "title" : "Losses",
+    "ImageFileName":"battle_06_losses.jpg"
   },
   {
     "id" : "7",
-    "title" : "Consequences"
+    "title" : "Consequences",
+    "ImageFileName":"battle_07_consequences.jpg"
   }
 ]              

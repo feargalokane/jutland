@@ -101,7 +101,7 @@ body.section-3 ul.section-list .section-link#section-3 h2 {
 
 /* Section Lists */
 .inner .section-list {
-	margin: 250px 160px 0;
+	margin: 200px 160px 0;
 
 	li {
 		width: 400px;
@@ -230,5 +230,9 @@ body.section-3 ul.section-list .section-link#section-3 h2 {
 }
 
 .item-25 #item-25 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-60 #item-60 h2 {
 	background: rgba($blue,0.7);
 }

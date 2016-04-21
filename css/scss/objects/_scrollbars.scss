@@ -30,9 +30,9 @@
 } /* this will style the thumb, ignoring the track */
  
 ::-webkit-scrollbar-button {
-      background-color: #7c2929;
+      background-color: darken($blue-light,10%);
 } /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
  
 ::-webkit-scrollbar-corner {
-      background-color: black;
+      background-color: darken($blue-light,10%);
 } /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */

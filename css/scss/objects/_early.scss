@@ -9,11 +9,11 @@
 
 	.secondary {
 		position: absolute;
-		top: 200px;
+		top: 170px;
 		bottom: 60px;
-		left: 100px;
+		left: 61px;
 		width: 300px;
-		height: calc(100% - 290px);
+		height: calc(100% - 270px);
 		-webkit-transition: all .25s ease;
     -moz-transition: all .25s ease;
     transition: all .25s ease;
@@ -91,7 +91,7 @@
 
 				.headline {
 					margin: 0;
-			    font-size: 18px;
+			    font-size: 15px;
 			    font-weight: 200;
 			    line-height: 48px;
 			    -webkit-transition: all .25s ease;
@@ -360,11 +360,11 @@
 .category.item {
 	.timeline {
 		position: absolute;
-		top: 200px;
+		top: 170px;
 		bottom: 60px;
 		left: 60px;
 		width: 340px;
-		height: calc(100% - 290px);
+		height: calc(100% - 270px);
 		background: transparent;
 		-webkit-transition: all .25s ease;
 		-moz-transition: all .25s ease;
@@ -411,7 +411,7 @@
 				position: relative;
 				bottom: inherit;
 				left: 0 !important;
-				margin: 0 1% 10px -43px;
+				margin: 0 1% 0px -43px;
 				width: 98%;
 				border: 0;
 
@@ -436,6 +436,8 @@
 
 			li a.type-8 {
 				pointer-events: none !important;
+				display: none !important;
+				visibility: hidden !important;
 
 				h2, p {
 					display: none;
@@ -463,6 +465,7 @@
 					background: $blue-light;
 					color: $white;
 					margin-left: 100px;
+					margin-bottom: 10px;
 					padding-left: 20px;
 					text-align: left;
 
@@ -539,7 +542,7 @@
 
 	.container {
 		position: absolute;
-		top: 230px;
+		top: 185px;
 		left: 450px;
 		width: 1380px;
 		height: 725px;

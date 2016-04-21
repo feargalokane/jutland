@@ -17,13 +17,13 @@
 			float: left;
 			max-height: 800px;
 			max-width: 800px;
-			min-width: 600px;
+			min-width: 800px;
 			margin-right: 50px;
 			min-height: 800px;
 			text-align: center;
 
 			img {
-				max-height: 800px;
+				max-height: 600px;
 			}
 		}
 
@@ -33,6 +33,17 @@
 				text-transform: uppercase;
 				margin-bottom: 0.5em;
 			}
+
+			h2 {
+				text-transform: uppercase;
+			    font-weight: 100;
+			    color: #666;
+			    margin-bottom: 20px;
+			}
+		}
+
+		.media + .content {
+			margin-left: 850px;
 		}
 	}
 

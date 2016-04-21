@@ -1,37 +1,37 @@
 [
   {
       "TID" : "1",
-      "name" : "​From the Castle to HMS Renown",
+      "name" : "​From Bangor Castle to HMS Renown",
       "ImageTitle" : "",
-      "ImageFileName" : "Barry.jpg",
+      "ImageFileName" : "bingham.jpg",
       "ImageAltText" : ""
   },
   {
     "TID" : "2",
-    "name" : "Life in the Navy",
+    "name" : "Life in the Royal Navy",
     "ImageTitle" : "",
-    "ImageFileName" : "260-260.png",
+    "ImageFileName" : "rudder.jpg",
     "ImageAltText" : ""
   },
   {
     "TID" : "3",
-    "name" : "First World War",
+    "name" : "​One man and the Great War",
     "ImageTitle" : "",
-    "ImageFileName" : "260-260.png",
+    "ImageFileName" : "war.jpg",
     "ImageAltText" : ""
   },
   {
     "TID" : "4",
-    "name" : "Battle of Jutland",
+    "name" : "HMS Nestor & the Battle of Jutland",
     "ImageTitle" : "",
-    "ImageFileName" : "260-260.png",
+    "ImageFileName" : "jutland_plan.jpg",
     "ImageAltText" : ""
   },
   {
     "TID" : "5",
-    "name" : "Capture & Captivity",
+    "name" : "Prisoner of War",
     "ImageTitle" : "",
-    "ImageFileName" : "260-260.png",
+    "ImageFileName" : "pow.jpg",
     "ImageAltText" : ""
   },
   {

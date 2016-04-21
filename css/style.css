@@ -978,7 +978,7 @@ body.section-3 ul.section-list .section-link#section-3 h2 {
 /* Section Lists */
 /* line 103, scss/objects/_nav.scss */
 .inner .section-list {
-  margin: 250px 160px 0;
+  margin: 200px 160px 0;
 }
 /* line 106, scss/objects/_nav.scss */
 .inner .section-list li {
@@ -1133,6 +1133,11 @@ body.section-3 ul.section-list .section-link#section-3 h2 {
   background: rgba(0, 167, 225, 0.7);
 }
 
+/* line 236, scss/objects/_nav.scss */
+.item-60 #item-60 h2 {
+  background: rgba(0, 167, 225, 0.7);
+}
+
 /*------------------------------------*\
     $MAIN CONTENT AREA
 \*------------------------------------*/
@@ -1147,7 +1152,7 @@ body {
   min-height: 700px;
   height: 100%;
   overflow: hidden;
-  background: url("/img/map.png") 50% 50% no-repeat;
+  background: url("/jutland-ang/img/map.png") 50% 50% no-repeat;
   background-size: cover;
 }
 /* line 16, scss/objects/_main.scss */
@@ -1281,7 +1286,7 @@ body {
   color: #00A7E1;
   position: absolute;
   left: 0px;
-  top: 90px;
+  top: 45px;
   border-bottom: 1px solid #00A7E1;
   padding: 10px 40px 10px 300px;
   width: 60%;
@@ -1687,7 +1692,7 @@ body {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   filter: gray;
-  filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/s….3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+  filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/sÔÇª.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   transition: all .3s ease;
@@ -1726,11 +1731,11 @@ body {
 .inner .secondary .section-link .headline {
   font-weight: 400;
   font-size: 20px;
-  min-width: 60%;
+  min-width: 75%;
   margin-left: auto;
   margin-right: auto;
   display: inline-block;
-  padding: 0 30px;
+  padding: 0 10px;
 }
 
 /* line 2, scss/objects/_lists.scss */
@@ -2065,11 +2070,11 @@ body {
 /* line 10, scss/objects/_early.scss */
 .category .secondary {
   position: absolute;
-  top: 200px;
+  top: 170px;
   bottom: 60px;
-  left: 100px;
+  left: 61px;
   width: 300px;
-  height: calc(100% - 290px);
+  height: calc(100% - 270px);
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
   transition: all .25s ease;
@@ -2147,7 +2152,7 @@ body {
 /* line 92, scss/objects/_early.scss */
 .category .secondary li .section-link .headline {
   margin: 0;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 200;
   line-height: 48px;
   -webkit-transition: all .25s ease;
@@ -2392,11 +2397,11 @@ body {
 /* line 361, scss/objects/_early.scss */
 .category.item .timeline {
   position: absolute;
-  top: 200px;
+  top: 170px;
   bottom: 60px;
   left: 60px;
   width: 340px;
-  height: calc(100% - 290px);
+  height: calc(100% - 270px);
   background: transparent;
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
@@ -2444,7 +2449,7 @@ body {
   position: relative;
   bottom: inherit;
   left: 0 !important;
-  margin: 0 1% 10px -43px;
+  margin: 0 1% 0px -43px;
   width: 98%;
   border: 0;
 }
@@ -2469,12 +2474,14 @@ body {
 /* line 437, scss/objects/_early.scss */
 .category.item .timeline .timeline-list li a.type-8 {
   pointer-events: none !important;
+  display: none !important;
+  visibility: hidden !important;
 }
-/* line 440, scss/objects/_early.scss */
+/* line 442, scss/objects/_early.scss */
 .category.item .timeline .timeline-list li a.type-8 h2, .category.item .timeline .timeline-list li a.type-8 p {
   display: none;
 }
-/* line 444, scss/objects/_early.scss */
+/* line 446, scss/objects/_early.scss */
 .category.item .timeline .timeline-list li a.type-8 span {
   font-size: 20px;
   background: #fff;
@@ -2486,19 +2493,20 @@ body {
   color: #9B9B9B;
   border: 3px solid #9B9B9B;
 }
-/* line 455, scss/objects/_early.scss */
+/* line 457, scss/objects/_early.scss */
 .category.item .timeline .timeline-list li a.type-8 span:after {
   display: none;
 }
-/* line 462, scss/objects/_early.scss */
+/* line 464, scss/objects/_early.scss */
 .category.item .timeline .timeline-list li a.type-7 h2 {
   background: #72D2F3;
   color: #fff;
   margin-left: 100px;
+  margin-bottom: 10px;
   padding-left: 20px;
   text-align: left;
 }
-/* line 469, scss/objects/_early.scss */
+/* line 472, scss/objects/_early.scss */
 .category.item .timeline .timeline-list li a.type-7 h2:before {
   content: " ";
   height: 16px;
@@ -2512,7 +2520,7 @@ body {
   left: 32px;
   background: white;
 }
-/* line 483, scss/objects/_early.scss */
+/* line 486, scss/objects/_early.scss */
 .category.item .timeline .timeline-list li a.type-7 h2:after {
   content: " ";
   display: block;
@@ -2523,19 +2531,19 @@ body {
   top: 50%;
   left: 50px;
 }
-/* line 495, scss/objects/_early.scss */
+/* line 498, scss/objects/_early.scss */
 .category.item .timeline .timeline-list li a.type-7 p, .category.item .timeline .timeline-list li a.type-7 span {
   display: none;
 }
-/* line 501, scss/objects/_early.scss */
+/* line 504, scss/objects/_early.scss */
 .category.item .timeline .timeline-list.personal li {
   border-right: 4px solid #00A7E1;
 }
-/* line 505, scss/objects/_early.scss */
+/* line 508, scss/objects/_early.scss */
 .category.item .timeline .timeline-list.world li {
   border-right: 4px solid #F9A704;
 }
-/* line 510, scss/objects/_early.scss */
+/* line 513, scss/objects/_early.scss */
 .category.item .category-title {
   position: absolute;
   top: 60px;
@@ -2546,7 +2554,7 @@ body {
   left: 40px;
   z-index: 10;
 }
-/* line 520, scss/objects/_early.scss */
+/* line 523, scss/objects/_early.scss */
 .category.item .category-title:before {
   content: " ";
   width: 12px;
@@ -2561,19 +2569,19 @@ body {
   float: left;
   margin-right: 8px;
 }
-/* line 535, scss/objects/_early.scss */
+/* line 538, scss/objects/_early.scss */
 .category.item .category-title a {
   color: #00A7E1;
 }
-/* line 540, scss/objects/_early.scss */
+/* line 543, scss/objects/_early.scss */
 .category.item .container {
   position: absolute;
-  top: 230px;
+  top: 185px;
   left: 450px;
   width: 1380px;
   height: 725px;
 }
-/* line 547, scss/objects/_early.scss */
+/* line 550, scss/objects/_early.scss */
 .category.item .container h1 {
   position: absolute;
   left: -450px;
@@ -2595,14 +2603,14 @@ body {
   float: left;
   max-height: 800px;
   max-width: 800px;
-  min-width: 600px;
+  min-width: 800px;
   margin-right: 50px;
   min-height: 800px;
   text-align: center;
 }
 /* line 25, scss/objects/_birth.scss */
 .item .container .media img {
-  max-height: 800px;
+  max-height: 600px;
 }
 /* line 31, scss/objects/_birth.scss */
 .item .container .content h1 {
@@ -2610,13 +2618,24 @@ body {
   text-transform: uppercase;
   margin-bottom: 0.5em;
 }
-/* line 39, scss/objects/_birth.scss */
+/* line 37, scss/objects/_birth.scss */
+.item .container .content h2 {
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #666;
+  margin-bottom: 20px;
+}
+/* line 45, scss/objects/_birth.scss */
+.item .container .media + .content {
+  margin-left: 850px;
+}
+/* line 50, scss/objects/_birth.scss */
 .item p.summary {
   font-size: 2em;
   line-height: 1.3;
 }
 
-/* line 45, scss/objects/_birth.scss */
+/* line 56, scss/objects/_birth.scss */
 .birth.inner .container {
   display: block;
   -webkit-transition: all .25s ease;
@@ -2665,13 +2684,13 @@ body {
 /* this will style the thumb, ignoring the track */
 /* line 32, scss/objects/_scrollbars.scss */
 ::-webkit-scrollbar-button {
-  background-color: #7c2929;
+  background-color: #43c3ef;
 }
 
 /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
 /* line 36, scss/objects/_scrollbars.scss */
 ::-webkit-scrollbar-corner {
-  background-color: black;
+  background-color: #43c3ef;
 }
 
 /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */

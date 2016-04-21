@@ -1,12 +1,11 @@
     <h1 class="title">{{item.title}}</h1>
     <div class="media">
-        <img src="/img/section-1/{{item.ImageFileName}}" alt="{{item.ImageAltText}}">
+        <img src="../jutland-ang/img/section-1/{{item.ImageFileName}}" alt="{{item.ImageAltText}}">
     </div>
     <div class="content">
-    		<p class="summary">
-    			{{item.field_summary}}	
-    		</p>
-        <p>
-          {{item.field_content}}
-        </p>
+    	<h2>{{item.field_timeline_date}}</h2>
+        <p class="summary">
+    		{{item.field_summary}}	
+    	</p>
+        <div ng-bind-html="item.field_content"></div>
     </div>

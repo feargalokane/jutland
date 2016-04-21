@@ -14,6 +14,10 @@ angular.module('jutlandApp', ['ui.router', 'HomeController', 'GameController', '
     });    
   })
 
+  .config(function($sceProvider){
+    $sceProvider.enabled(false);
+  })
+
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
 
