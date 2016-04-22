@@ -1,11 +1,11 @@
-    <h1 class="title">{{item.title}}</h1>
-    <div class="media">
-        <img src="../jutland-ang/img/section-1/{{item.ImageFileName}}" alt="{{item.ImageAltText}}">
-    </div>
-    <div class="content">
-    	<h2>{{item.field_timeline_date}}</h2>
-        <p class="summary">
-    		{{item.field_summary}}	
-    	</p>
-        <div ng-bind-html="item.field_content"></div>
-    </div>
+<h1 class="title">{{item.title}}</h1>
+<div ng-if="item.type == undefined">
+    <div ng-include="'templates/partials/timelineImage.html'" class="image"></div>
+</div>
+
+<div ng-if="item.type == 'PDF'">
+    <div ng-include="'templates/partials/timelinePDF.html'" class="PDF"></div>
+</div>
+<div ng-if="item.type == '360'">
+    <div ng-include="'templates/partials/timeline360.html'" class="360">
+</div>

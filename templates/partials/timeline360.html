@@ -1,0 +1,22 @@
+
+<div class="media">
+<div class="media-container">
+    <iframe
+        style="border:0; max-width: 100%;"
+        name="3drt"
+        marginheight="0"
+        marginwidth="0"
+        scrolling="no"
+        ng-src="{{threesixtyurl}}"
+        width="900"
+        height="720">
+    </iframe>
+</div>
+</div>
+    <div class="content">
+    	<h2>{{item.field_timeline_date}}</h2>
+        <p class="summary">
+    		{{item.field_summary}}	
+    	</p>
+        <div ng-bind-html="item.field_content"></div>
+    </div>

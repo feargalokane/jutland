@@ -827,9 +827,10 @@
       "view_node":"view",
       "field_section":"6",
       "field_type":"7",
-      "ImageTitle":"",
-      "ImageFileName":"",
-      "ImageAltText":""
+      "PDFTitle":"",
+      "PDFileName":"test.pdf",
+      "PDFAltText":"",
+      "type":"PDF"
    },
    {  
       "nid":"50",
@@ -868,6 +869,8 @@
       "field_type":"7",
       "ImageTitle":"",
       "ImageFileName":"",
-      "ImageAltText":""
+      "ImageAltText":"",
+      "Dir":"medal",
+      "type":"360"
    }
 ]
