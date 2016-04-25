@@ -1,37 +1,34 @@
-var productRotationData_1440066361029 = {
+var productRotationData_1458820913258 = {
     "custom": {
-        "contexMenu": {"items": [{"action": "URL_OPEN", "title": "", "data": ""}]}
+        "contexMenu": {
+            "items": [{"action": "URL_OPEN", "title": null, "data": null}]
+        }
     },
     "settings": {
         "userInterface": {
+            "zoomBarClickable": true,
+            "showToggleRotateButton": "zoom",
+            "showToggleFullscreenButton": true,
+            "showResetButton": "zoom",
+            "showTogglePlayButton": true,
             "showArrows": true,
             "showZoomButtons": true,
             "defaultCursor": false,
             "showZoombar": true,
             "showScreenshotButton": false,
-            "showTogglePanButton": "zoom",
-            "zoomBarClickable": true,
-            "showToggleRotateButton": "zoom",
-            "showToggleFullscreenButton": true,
-            "showResetButton": "zoom",
-            "showTogglePlayButton": true
+            "showTogglePanButton": "zoom"
         },
         "rotation": {
             "rotate": "true",
-            "disabledIfZoom": false,
-            "bounce": false,
             "rotateDirection": 1,
             "rotatePeriod": 3,
             "firstImage": 0,
             "rotationAxis": "vertical",
-            "autoRestart": 0
+            "autoRestart": 0,
+            "bounce": false,
+            "disabledIfZoom": false
         },
         "control": {
-            "zoomSteps": 2,
-            "enableSwing": true,
-            "rotateZoom": false,
-            "playAfterDrag": false,
-            "disableClick": false,
             "disableDrag": false,
             "arrowInterval": 100,
             "screenshotFullImage": false,
@@ -44,57 +41,53 @@ var productRotationData_1440066361029 = {
             "dragSpeed": 0.5,
             "zoomInStopsRotation": true,
             "zoomOutStartsRotation": true,
-            "clickZoomsIn": false
+            "clickZoomsIn": false,
+            "zoomSteps": 2,
+            "enableSwing": true,
+            "rotateZoom": false,
+            "playAfterDrag": false,
+            "disableClick": false
         },
         "preloader": {
-            "preLoadImages": false,
+            "showStartButton": false,
             "image": 0,
             "type": "default",
-            "color1": "#303030",
-            "showStartButton": false,
-            "showLoadedImages": false
+            "preLoadImages": false,
+            "showLoadedImages": false,
+            "color1": "#303030"
         }
     },
     "hotspots": null,
     "images": [
-        {"hotspots": {}, "src": "images/DSC_0407.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0408.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0409.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0410.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0411.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0412.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0413.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0414.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0415.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0416.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0417.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0418.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0419.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0420.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0421.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0422.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0423.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0424.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0425.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0426.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0427.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0428.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0429.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0430.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0431.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0432.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0433.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0434.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0435.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0436.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0437.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0438.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0439.JPG"},
-        {"hotspots": {}, "src": "images/DSC_0440.JPG"}
+        {"hotspots": {}, "src": "images/DSC_0075.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0076.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0077.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0078.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0079.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0080.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0081.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0082.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0083.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0084.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0085.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0086.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0087.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0088.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0089.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0090.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0091.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0092.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0093.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0094.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0095.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0096.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0097.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0098.JPG"},
+        {"hotspots": {}, "src": "images/DSC_0099.JPG"}
     ]
 };
 
 //for maximum compatiblity, assign the data to 1. common named variable, 2. product - specific named variable
 
-var RotationData_test4 = productRotationData_1440066361029;
-var RotationData = productRotationData_1440066361029;
+var RotationData_Normalres = productRotationData_1458820913258;
+var RotationData = productRotationData_1458820913258;

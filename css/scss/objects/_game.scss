@@ -1,0 +1,45 @@
+/* Game */
+.game {
+	.container {
+		display: block;
+		margin-top: 200px;
+		position: relative;
+		height: 700px;
+
+		.col.first,
+		.col.last {
+			width: 300px;
+			left: 200px;
+			height: 100%;
+			position: absolute;
+		}
+
+		.col.last {
+			background: url('../img/section-3/org_logos.png') bottom right no-repeat;
+			left: 1420px; 
+		}
+
+		.col.main {
+			width: 800px;
+			height: 100%;
+			left: 560px;
+			position: absolute;
+
+			input {
+				font-size: 1.5em;
+				width: 300px;
+				margin: 20px 250px;
+				background: $blue;
+				text-transform: uppercase;
+				color: $white;
+				font-weight: bold;
+				border: 1px solid darken($blue,5%);
+
+				&:active {
+					background: darken($blue,10%);
+					border-color: darken($blue,15%);
+				}
+			}
+		}
+	}
+}

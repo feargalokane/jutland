@@ -56,7 +56,7 @@
 	position: fixed;
 	bottom: 0;
 	left: 32%;
-	height: 48px;
+	height: 97px;
 	width: 68%;
   margin: 0;
 
@@ -77,9 +77,12 @@
 
 		.headline {
 			margin: 0;
-	    font-size: 20px;
-	    font-weight: 400;
-	    line-height: 48px;
+		    font-size: 20px;
+		    font-weight: 400;
+		    line-height: 97px;
+			height: 97px;
+			border-bottom: 0;
+			border-right: 0;
 		}
 	}
 }
@@ -127,6 +130,175 @@ body.section-3 ul.section-list .section-link#section-3 h2 {
 
 	li:nth-child(3n + 3) {
 		margin-right: 0;
+	}
+}
+
+/* Battle Section */
+
+.section-2 {
+	.section-list li {
+		margin-right: 0;
+	}
+
+	.section-list li#battle-5 {
+		margin-left: 205px;
+	}
+}
+
+/* Move nav to LHS */
+.section-2.battle {
+	.section-list.secondary {
+		position: absolute;
+		top: 170px;
+		bottom: 60px;
+		left: 61px;
+		width: 300px;
+		height: calc(100% - 270px);
+		-webkit-transition: all .25s ease;
+    	-moz-transition: all .25s ease;
+    	transition: all .25s ease;
+    	margin: 0;
+    	overflow-y: hidden;
+    	box-sizing: border-box;
+    	padding-top: 40px;
+
+	    &:before {
+		    border-right: 2px solid $yellow;
+		    content: " ";
+		    display: block;
+		    height: 100%;
+		    height: calc(100% + 40px);
+		    position: absolute;
+		    left: 59px;
+		    top: -40px;
+		}
+
+		&:after {
+		    content: " ";
+		    height: 16px;
+		    width: 16px;
+		    border: 2px solid $yellow;
+		    border-radius: 50%;
+		    display: block;
+		    position: absolute;
+		    bottom: 0;
+		    left: 50px;
+		    background: white;
+		}
+
+		li {
+			position: relative;
+			width: 100%;
+			display: block;
+			top: 0;
+			left: 0;
+			-webkit-transition: all .25s ease;
+	    	-moz-transition: all .25s ease;
+	    	transition: all .25s ease;
+	    	margin: 0;
+
+	    	&:first-child:before {
+			    content: " ";
+			    height: 16px;
+			    width: 16px;
+			    border: 2px solid #F9A704;
+			    border-radius: 50%;
+			    display: block;
+			    position: absolute;
+			    top: -40px;
+			    left: 50px;
+			    background: white;
+			}
+
+	    	.section-link {
+	    		a {
+		    		display: block;
+				    height: 90px;
+				    padding-left: 30px;
+				    padding-top: 0px;
+		    	}
+
+
+				.round {
+					width: 60px;
+		    		float: left;
+		    		padding: 0px;
+
+		    		img {
+		    			border: 4px solid $gray-med;
+		    		}
+				}
+
+				.headline {
+					margin: 0;
+				    font-size: 15px;
+				    font-weight: 200;
+				    line-height: 48px;
+				    -webkit-transition: all .25s ease;
+		    		-moz-transition: all .25s ease;
+		    		transition: all .25s ease;
+		    		margin-left: 0;
+				    padding-top: 30px;
+				    line-height: 1.2;
+				    text-align: left;
+				    height: auto;
+				    border-color: $gray;
+				    color: $gray;
+				    padding: 0 10px 0 60px;
+				    width: 220px;
+				    position: absolute;
+				    left: 60px;
+				    top: 5px;
+				    height: 50px;
+				    z-index: -1;
+				    vertical-align: middle;
+				    display: table;
+
+				    span {
+				    	vertical-align: middle;
+				    	display: table-cell;
+				    }
+				}
+			}
+		}
+
+		li#battle-5 {
+			margin-left: 0;
+		}
+	}
+
+	&.battle-1 #battle-1,
+	&.battle-2 #battle-2,
+	&.battle-3 #battle-3,
+	&.battle-4 #battle-4,
+	&.battle-5 #battle-5,
+	&.battle-6 #battle-6,
+	&.battle-7 #battle-7 {
+		height: 120px;
+		padding-top: 0;
+
+		.round {
+			width: 100px;
+			margin-left: -20px;
+
+			img {
+				border-color: $blue;
+			}
+		}
+
+		.headline {
+			display: table;
+			vertical-align: middle;
+			height: 50px;
+			top: 25px;
+			color: $blue;
+			border-color: $blue;
+
+			span {
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
 	}
 }
 

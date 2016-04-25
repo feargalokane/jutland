@@ -60,6 +60,25 @@
 	}
 }
 
+ul.funders {
+	position: relative;
+	width: 100%;
+
+	li {
+		position: absolute;
+		top: 32px;
+	}
+
+	li.hlf {
+		left: 60px;
+		top: 50px;
+	}
+
+	li.andbc {
+		right: 60px;
+	}
+}
+
 .front.active,
 .inner {
 	.site-title {
@@ -77,6 +96,12 @@
 		width: 32%;
 		text-align: center;
 		background: $white;
-		height: 48px;
+		height: 97px;
+		line-height: 77px;
+	}
+
+	ul.funders {
+		display: none;
+		visibility: hidden;
 	}
 }
