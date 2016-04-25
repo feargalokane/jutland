@@ -131,10 +131,10 @@ angular.module('jutlandApp', ['ui.router', 'HomeController', 'GameController', '
           return 'templates/battlepage'+$stateParams.id+'.html';
         },  
         onEnter: function ($stateParams) {
-          addBodyClasses(["section-2"]);
+          addBodyClasses(["section-2","battle","battle-"+$stateParams.id]);
         },
         onExit: function ($stateParams) {
-          removeBodyClasses(["section-2"]);
+          removeBodyClasses(["section-2","battle","battle-"+$stateParams.id]);
         }
       })  
       .state('game', {
