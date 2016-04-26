@@ -1381,64 +1381,53 @@ body:after {
 /*------------------------------------*\
     $TEXT Styles
 \*------------------------------------*/
-/* line 1, scss/objects/_text.scss */
-html {
-  pointer-events: none !important;
-}
-
-/* line 5, scss/objects/_text.scss */
+/* line 4, scss/objects/_text.scss */
 body {
   font-family: "pt_sansregular", "PT Sans", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
-  pointer-events: none;
 }
 
-/* line 10, scss/objects/_text.scss */
-a, input, iframe {
-  pointer-events: auto !important;
-}
-
-/* line 15, scss/objects/_text.scss */
+/* line 12, scss/objects/_text.scss */
 .intro {
   font-size: 1.0625em;
   font-weight: bold;
 }
 
-/* line 21, scss/objects/_text.scss */
+/* line 18, scss/objects/_text.scss */
 .pullquote {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 1.4375em;
 }
 
-/* line 27, scss/objects/_text.scss */
+/* line 24, scss/objects/_text.scss */
 .caption {
   font-style: italic;
 }
 
-/* line 33, scss/objects/_text.scss */
+/* line 30, scss/objects/_text.scss */
 .text a {
   text-decoration: underline;
 }
-/* line 37, scss/objects/_text.scss */
+/* line 34, scss/objects/_text.scss */
 .text ul {
   list-style: disc;
   margin: 0 0 1em 1.2em;
 }
-/* line 41, scss/objects/_text.scss */
+/* line 38, scss/objects/_text.scss */
 .text ul ul {
   margin-bottom: 0;
 }
-/* line 46, scss/objects/_text.scss */
+/* line 43, scss/objects/_text.scss */
 .text ol {
   list-style: decimal;
   margin: 0 0 1em 1.5em;
 }
-/* line 50, scss/objects/_text.scss */
+/* line 47, scss/objects/_text.scss */
 .text ol ol {
   margin-bottom: 0;
 }
 
 /* Site Title */
-/* line 57, scss/objects/_text.scss */
+/* line 54, scss/objects/_text.scss */
 .site-title {
   text-transform: uppercase;
   color: #000;
@@ -1449,7 +1438,7 @@ a, input, iframe {
   transition: all .25s ease;
 }
 
-/* line 67, scss/objects/_text.scss */
+/* line 64, scss/objects/_text.scss */
 .title {
   font-size: 36px;
   font-weight: 200;
@@ -1467,7 +1456,7 @@ a, input, iframe {
   text-align: right;
   box-sizing: border-box;
 }
-/* line 84, scss/objects/_text.scss */
+/* line 81, scss/objects/_text.scss */
 .title:after {
   content: " ";
   height: 16px;
@@ -2103,25 +2092,26 @@ a, input, iframe {
 
 /* line 63, scss/objects/_home.scss */
 ul.funders {
-  position: relative;
+  position: absolute;
   width: 100%;
+  bottom: 150px;
 }
-/* line 67, scss/objects/_home.scss */
+/* line 68, scss/objects/_home.scss */
 ul.funders li {
   position: absolute;
   top: 32px;
 }
-/* line 72, scss/objects/_home.scss */
+/* line 73, scss/objects/_home.scss */
 ul.funders li.hlf {
   left: 60px;
   top: 50px;
 }
-/* line 77, scss/objects/_home.scss */
+/* line 78, scss/objects/_home.scss */
 ul.funders li.andbc {
   right: 60px;
 }
 
-/* line 84, scss/objects/_home.scss */
+/* line 85, scss/objects/_home.scss */
 .front.active .site-title,
 .inner .site-title {
   -webkit-transition: all .25s ease;
@@ -2141,7 +2131,7 @@ ul.funders li.andbc {
   height: 97px;
   line-height: 77px;
 }
-/* line 103, scss/objects/_home.scss */
+/* line 104, scss/objects/_home.scss */
 .front.active ul.funders,
 .inner ul.funders {
   display: none;
@@ -2417,22 +2407,23 @@ ul.funders li.andbc {
   -moz-transition: all .25s ease;
   transition: all .25s ease;
   overflow-x: auto;
+  overflow-y: hidden;
   display: block;
 }
-/* line 174, scss/objects/_early.scss */
+/* line 175, scss/objects/_early.scss */
 .category .timeline h1 {
   text-align: center;
   text-transform: uppercase;
   font-size: 36px;
   font-weight: 600;
 }
-/* line 181, scss/objects/_early.scss */
+/* line 182, scss/objects/_early.scss */
 .category .timeline .timeline-list {
   position: absolute;
   height: 700px;
   margin-left: 60px;
 }
-/* line 186, scss/objects/_early.scss */
+/* line 187, scss/objects/_early.scss */
 .category .timeline .timeline-list:before {
   content: " ";
   display: block;
@@ -2442,7 +2433,7 @@ ul.funders li.andbc {
   position: absolute;
   top: 300px;
 }
-/* line 196, scss/objects/_early.scss */
+/* line 197, scss/objects/_early.scss */
 .category .timeline .timeline-list:after {
   content: " ";
   height: 24px;
@@ -2455,21 +2446,21 @@ ul.funders li.andbc {
   left: -60px;
   background: white;
 }
-/* line 209, scss/objects/_early.scss */
+/* line 210, scss/objects/_early.scss */
 .category .timeline .timeline-list li {
   position: relative;
   margin-right: 20px;
   float: left;
   border: 1px solid #CDCDCD;
 }
-/* line 215, scss/objects/_early.scss */
+/* line 216, scss/objects/_early.scss */
 .category .timeline .timeline-list li .timeline-link {
   display: block;
   width: 350px;
   max-width: 100%;
   background: #f9f9f9;
 }
-/* line 225, scss/objects/_early.scss */
+/* line 226, scss/objects/_early.scss */
 .category .timeline .timeline-list li .timeline-link h2 {
   padding: 10px;
   font-weight: 300;
@@ -2477,12 +2468,12 @@ ul.funders li.andbc {
   margin: -1px;
   color: #fff;
 }
-/* line 233, scss/objects/_early.scss */
+/* line 234, scss/objects/_early.scss */
 .category .timeline .timeline-list li .timeline-link p {
   padding: 10px;
   margin-bottom: 0;
 }
-/* line 238, scss/objects/_early.scss */
+/* line 239, scss/objects/_early.scss */
 .category .timeline .timeline-list li .timeline-link span {
   text-align: left;
   font-size: 1.125em;
@@ -2491,7 +2482,7 @@ ul.funders li.andbc {
   text-transform: uppercase;
   color: #666;
 }
-/* line 250, scss/objects/_early.scss */
+/* line 251, scss/objects/_early.scss */
 .category .timeline .timeline-list li.type-7:before {
   content: " ";
   height: 16px;
@@ -2505,7 +2496,7 @@ ul.funders li.andbc {
   left: 21px;
   background: white;
 }
-/* line 264, scss/objects/_early.scss */
+/* line 265, scss/objects/_early.scss */
 .category .timeline .timeline-list li.type-7:after {
   content: " ";
   display: block;
@@ -2518,28 +2509,28 @@ ul.funders li.andbc {
   z-index: -1;
   left: 120px;
 }
-/* line 278, scss/objects/_early.scss */
+/* line 279, scss/objects/_early.scss */
 .category .timeline .timeline-list li.type-8 {
   bottom: -400px;
   pointer-events: none !important;
   border: 0;
 }
-/* line 283, scss/objects/_early.scss */
+/* line 284, scss/objects/_early.scss */
 .category .timeline .timeline-list li.type-8 .timeline-link {
   background: #9B9B9B;
   color: #fff;
 }
-/* line 287, scss/objects/_early.scss */
+/* line 288, scss/objects/_early.scss */
 .category .timeline .timeline-list li.type-8 .timeline-link a {
   color: #fff;
 }
-/* line 292, scss/objects/_early.scss */
+/* line 293, scss/objects/_early.scss */
 .category .timeline .timeline-list li.type-8 h2 {
   background: #9B9B9B;
   border-color: #4d4d4d;
   display: none;
 }
-/* line 298, scss/objects/_early.scss */
+/* line 299, scss/objects/_early.scss */
 .category .timeline .timeline-list li.type-8 span {
   position: absolute;
   top: -152px;
@@ -2553,7 +2544,7 @@ ul.funders li.andbc {
   color: #9B9B9B;
   border: 3px solid #9B9B9B;
 }
-/* line 311, scss/objects/_early.scss */
+/* line 312, scss/objects/_early.scss */
 .category .timeline .timeline-list li.type-8 span:after {
   content: " ";
   display: block;
@@ -2564,35 +2555,35 @@ ul.funders li.andbc {
   left: 35px;
   height: 53px;
 }
-/* line 329, scss/objects/_early.scss */
+/* line 330, scss/objects/_early.scss */
 .category .timeline .timeline-list .world h2 {
   background: #F9A704;
   border-bottom: 4px solid #F9A704;
   color: #000;
 }
-/* line 337, scss/objects/_early.scss */
+/* line 338, scss/objects/_early.scss */
 .category .timeline .timeline-list.personal {
   top: 0;
 }
-/* line 341, scss/objects/_early.scss */
+/* line 342, scss/objects/_early.scss */
 .category .timeline .timeline-list.world {
   bottom: 0;
 }
-/* line 344, scss/objects/_early.scss */
+/* line 345, scss/objects/_early.scss */
 .category .timeline .timeline-list.world li {
   bottom: inherit;
   top: 0;
 }
-/* line 348, scss/objects/_early.scss */
+/* line 349, scss/objects/_early.scss */
 .category .timeline .timeline-list.world li:nth-child(1) {
   left: 200px;
 }
-/* line 352, scss/objects/_early.scss */
+/* line 353, scss/objects/_early.scss */
 .category .timeline .timeline-list.world li:nth-child(2) {
   left: 900px;
 }
 
-/* line 361, scss/objects/_early.scss */
+/* line 362, scss/objects/_early.scss */
 .category.item .timeline {
   position: absolute;
   top: 170px;
@@ -2607,13 +2598,13 @@ ul.funders li.andbc {
   overflow-x: inherit;
   overflow-y: auto;
 }
-/* line 375, scss/objects/_early.scss */
+/* line 376, scss/objects/_early.scss */
 .category.item .timeline h1 {
   font-size: 24px;
   margin: 10px;
   border-bottom: 1px solid;
 }
-/* line 381, scss/objects/_early.scss */
+/* line 382, scss/objects/_early.scss */
 .category.item .timeline .timeline-list {
   position: absolute;
   height: auto;
@@ -2622,7 +2613,7 @@ ul.funders li.andbc {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 389, scss/objects/_early.scss */
+/* line 390, scss/objects/_early.scss */
 .category.item .timeline .timeline-list:before, .category.item .timeline .timeline-list:after {
   content: " ";
   height: 16px;
@@ -2635,14 +2626,14 @@ ul.funders li.andbc {
   left: 49px;
   background: white;
 }
-/* line 403, scss/objects/_early.scss */
+/* line 404, scss/objects/_early.scss */
 .category.item .timeline .timeline-list:after {
   top: inherit;
   bottom: 0;
   left: -11px;
   background: white;
 }
-/* line 410, scss/objects/_early.scss */
+/* line 411, scss/objects/_early.scss */
 .category.item .timeline .timeline-list li {
   position: relative;
   bottom: inherit;
@@ -2651,12 +2642,12 @@ ul.funders li.andbc {
   width: 98%;
   border: 0;
 }
-/* line 418, scss/objects/_early.scss */
+/* line 419, scss/objects/_early.scss */
 .category.item .timeline .timeline-list li .timeline-link {
   width: 100%;
   background: transparent;
 }
-/* line 422, scss/objects/_early.scss */
+/* line 423, scss/objects/_early.scss */
 .category.item .timeline .timeline-list li .timeline-link h2 {
   font-size: 18px;
   background: transparent;
@@ -2665,21 +2656,21 @@ ul.funders li.andbc {
   padding-left: 20px;
   text-align: right;
 }
-/* line 431, scss/objects/_early.scss */
+/* line 432, scss/objects/_early.scss */
 .category.item .timeline .timeline-list li .timeline-link p {
   display: none;
 }
-/* line 437, scss/objects/_early.scss */
+/* line 438, scss/objects/_early.scss */
 .category.item .timeline .timeline-list li a.type-8 {
   pointer-events: none !important;
   display: none !important;
   visibility: hidden !important;
 }
-/* line 442, scss/objects/_early.scss */
+/* line 443, scss/objects/_early.scss */
 .category.item .timeline .timeline-list li a.type-8 h2, .category.item .timeline .timeline-list li a.type-8 p {
   display: none;
 }
-/* line 446, scss/objects/_early.scss */
+/* line 447, scss/objects/_early.scss */
 .category.item .timeline .timeline-list li a.type-8 span {
   font-size: 20px;
   background: #fff;
@@ -2691,11 +2682,11 @@ ul.funders li.andbc {
   color: #9B9B9B;
   border: 3px solid #9B9B9B;
 }
-/* line 457, scss/objects/_early.scss */
+/* line 458, scss/objects/_early.scss */
 .category.item .timeline .timeline-list li a.type-8 span:after {
   display: none;
 }
-/* line 464, scss/objects/_early.scss */
+/* line 465, scss/objects/_early.scss */
 .category.item .timeline .timeline-list li a.type-7 h2 {
   background: #72D2F3;
   color: #fff;
@@ -2704,7 +2695,7 @@ ul.funders li.andbc {
   padding-left: 20px;
   text-align: left;
 }
-/* line 472, scss/objects/_early.scss */
+/* line 473, scss/objects/_early.scss */
 .category.item .timeline .timeline-list li a.type-7 h2:before {
   content: " ";
   height: 16px;
@@ -2718,7 +2709,7 @@ ul.funders li.andbc {
   left: 32px;
   background: white;
 }
-/* line 486, scss/objects/_early.scss */
+/* line 487, scss/objects/_early.scss */
 .category.item .timeline .timeline-list li a.type-7 h2:after {
   content: " ";
   display: block;
@@ -2729,30 +2720,31 @@ ul.funders li.andbc {
   top: 50%;
   left: 50px;
 }
-/* line 498, scss/objects/_early.scss */
+/* line 499, scss/objects/_early.scss */
 .category.item .timeline .timeline-list li a.type-7 p, .category.item .timeline .timeline-list li a.type-7 span {
   display: none;
 }
-/* line 504, scss/objects/_early.scss */
+/* line 505, scss/objects/_early.scss */
 .category.item .timeline .timeline-list.personal li {
   border-right: 4px solid #00A7E1;
 }
-/* line 508, scss/objects/_early.scss */
+/* line 509, scss/objects/_early.scss */
 .category.item .timeline .timeline-list.world li {
   border-right: 4px solid #F9A704;
 }
-/* line 513, scss/objects/_early.scss */
+/* line 514, scss/objects/_early.scss */
 .category.item .category-title {
   position: absolute;
-  top: 60px;
+  top: 50px;
   text-transform: uppercase;
   font-size: 14px;
   color: #00A7E1;
   line-height: 36px;
   left: 40px;
   z-index: 10;
+  width: 400px;
 }
-/* line 523, scss/objects/_early.scss */
+/* line 525, scss/objects/_early.scss */
 .category.item .category-title:before {
   content: " ";
   width: 12px;
@@ -2763,15 +2755,17 @@ ul.funders li.andbc {
   display: block;
   position: relative;
   left: 0;
-  top: 4px;
+  top: 16px;
   float: left;
   margin-right: 8px;
 }
-/* line 538, scss/objects/_early.scss */
+/* line 540, scss/objects/_early.scss */
 .category.item .category-title a {
   color: #00A7E1;
+  display: block;
+  padding: 10px 0;
 }
-/* line 543, scss/objects/_early.scss */
+/* line 547, scss/objects/_early.scss */
 .category.item .container {
   position: absolute;
   top: 185px;
@@ -2779,7 +2773,7 @@ ul.funders li.andbc {
   width: 1380px;
   height: 725px;
 }
-/* line 550, scss/objects/_early.scss */
+/* line 554, scss/objects/_early.scss */
 .category.item .container h1 {
   position: absolute;
   left: -450px;
@@ -3119,34 +3113,23 @@ ul.funders li.andbc {
 /* Scrollbars */
 /* line 2, scss/objects/_scrollbars.scss */
 ::-webkit-scrollbar {
-  width: 21px;
-  height: 21px;
+  width: 32px;
+  height: 32px;
   border-radius: 4px;
   border-color: rgba(114, 210, 243, 0.3);
 }
 
 /* this targets the default scrollbar (compulsory) */
 /* line 9, scss/objects/_scrollbars.scss */
-::-webkit-scrollbar:after {
-  content: "Scrollbar present - do something Feargal";
-}
-
-/* line 13, scss/objects/_scrollbars.scss */
 ::-webkit-scrollbar-track {
   background-color: rgba(114, 210, 243, 0.2);
 }
 
 /* the new scrollbar will have a flat appearance with the set background color */
-/* line 17, scss/objects/_scrollbars.scss */
-::-webkit-scrollbar-track:before {
-  display: block;
-  content: "Start";
-}
-
-/* line 22, scss/objects/_scrollbars.scss */
+/* line 13, scss/objects/_scrollbars.scss */
 ::-webkit-scrollbar-thumb {
   background-color: rgba(114, 210, 243, 0.4);
-  height: 21px;
+  height: 32px;
   /*background-image: url('/img/slider.png');*/
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -3155,13 +3138,14 @@ ul.funders li.andbc {
 }
 
 /* this will style the thumb, ignoring the track */
-/* line 32, scss/objects/_scrollbars.scss */
+/* line 23, scss/objects/_scrollbars.scss */
 ::-webkit-scrollbar-button {
-  background-color: #43c3ef;
+  background: #43c3ef;
+  background-color: transparent;
 }
 
 /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
-/* line 36, scss/objects/_scrollbars.scss */
+/* line 28, scss/objects/_scrollbars.scss */
 ::-webkit-scrollbar-corner {
   background-color: #43c3ef;
 }

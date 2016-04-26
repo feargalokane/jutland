@@ -1,14 +1,11 @@
 html {
-	pointer-events: none !important;
 }
 
 body {
 	font-family: $font;
-	pointer-events: none;
 }
 
 a, input, iframe {
-	pointer-events: auto !important;
 }
 
 //Intro text
