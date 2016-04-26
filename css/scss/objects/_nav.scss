@@ -103,8 +103,16 @@ body.section-3 ul.section-list .section-link#section-3 h2 {
 }
 
 /* Section Lists */
-.inner .section-list {
+.section-list.navigation {
+	opacity: 1;
+}
+
+.section-list {
+}
+
+.inner .section-list.secondary {
 	margin: 200px 160px 0;
+	overflow: hidden;
 
 	li {
 		width: 400px;
@@ -135,7 +143,7 @@ body.section-3 ul.section-list .section-link#section-3 h2 {
 
 /* Battle Section */
 
-.section-2 {
+.inner.section-2 {
 	.section-list li {
 		margin-right: 0;
 	}
@@ -153,7 +161,7 @@ body.section-3 ul.section-list .section-link#section-3 h2 {
 		bottom: 60px;
 		left: 61px;
 		width: 300px;
-		height: calc(100% - 270px);
+		height: calc(100% - 320px);
 		-webkit-transition: all .25s ease;
     	-moz-transition: all .25s ease;
     	transition: all .25s ease;
@@ -305,106 +313,130 @@ body.section-3 ul.section-list .section-link#section-3 h2 {
 
 
 /* Item Navigation */
-.item-1 #item-1 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-2 #item-2 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-3 #item-3 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-4 #item-4 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-5 #item-5 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-6 #item-6 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-7 #item-7 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-8 #item-8 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-9 #item-9 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-10 #item-10 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-11 #item-11 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-12 #item-12 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-13 #item-13 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-14 #item-14 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-15 #item-15 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-16 #item-16 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-17 #item-17 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-18 #item-18 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-19 #item-19 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-20 #item-20 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-21 #item-21 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-22 #item-22 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-23 #item-23 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-24 #item-24 h2 {
-	background: rgba($blue,0.7);
-}
-
-.item-25 #item-25 h2 {
-	background: rgba($blue,0.7);
-}
-
+.item-1 #item-1 h2,
+.item-2 #item-2 h2,
+.item-3 #item-3 h2,
+.item-4 #item-4 h2,
+.item-5 #item-5 h2,
+.item-6 #item-6 h2,
+.item-7 #item-7 h2,
+.item-8 #item-8 h2,
+.item-9 #item-9 h2,
+.item-10 #item-10 h2,
+.item-11 #item-11 h2,
+.item-12 #item-12 h2,
+.item-13 #item-13 h2,
+.item-14 #item-14 h2,
+.item-15 #item-15 h2,
+.item-16 #item-16 h2,
+.item-17 #item-17 h2,
+.item-18 #item-18 h2,
+.item-19 #item-19 h2,
+.item-20 #item-20 h2,
+.item-21 #item-21 h2,
+.item-22 #item-22 h2,
+.item-23 #item-23 h2,
+.item-24 #item-24 h2,
+.item-25 #item-25 h2,
+.item-25 #item-25 h2,
+.item-25 #item-25 h2,
+.item-25 #item-25 h2,
 .item-60 #item-60 h2 {
+	background: rgba($blue,0.7);
+}
+
+.item-1 #item-1 h2,
+.item-2 #item-2 h2,
+.item-3 #item-3 h2,
+.item-4 #item-4 h2,
+.item-5 #item-5 h2,
+.item-6 #item-6 h2,
+.item-7 #item-7 h2,
+.item-8 #item-8 h2,
+.item-9 #item-9 h2,
+.item-10 #item-10 h2,
+.item-11 #item-11 h2,
+.item-12 #item-12 h2,
+.item-13 #item-13 h2,
+.item-14 #item-14 h2,
+.item-15 #item-15 h2,
+.item-16 #item-16 h2,
+.item-17 #item-17 h2,
+.item-18 #item-18 h2,
+.item-19 #item-19 h2,
+.item-20 #item-20 h2,
+.item-21 #item-21 h2,
+.item-22 #item-22 h2,
+.item-23 #item-23 h2,
+.item-24 #item-24 h2,
+.item-25 #item-25 h2,
+.item-26 #item-26 h2,
+.item-27 #item-27 h2,
+.item-28 #item-28 h2,
+.item-29 #item-29 h2,
+.item-30 #item-30 h2,
+.item-31 #item-31 h2,
+.item-32 #item-32 h2,
+.item-33 #item-33 h2,
+.item-34 #item-34 h2,
+.item-35 #item-35 h2,
+.item-36 #item-36 h2,
+.item-37 #item-37 h2,
+.item-38 #item-38 h2,
+.item-39 #item-39 h2,
+.item-40 #item-40 h2,
+.item-41 #item-41 h2,
+.item-42 #item-42 h2,
+.item-43 #item-43 h2,
+.item-44 #item-44 h2,
+.item-45 #item-45 h2,
+.item-46 #item-46 h2,
+.item-47 #item-47 h2,
+.item-48 #item-48 h2,
+.item-49 #item-49 h2,
+.item-50 #item-50 h2,
+.item-51 #item-51 h2,
+.item-52 #item-52 h2,
+.item-53 #item-53 h2,
+.item-54 #item-54 h2,
+.item-55 #item-55 h2,
+.item-56 #item-56 h2,
+.item-57 #item-57 h2,
+.item-58 #item-58 h2,
+.item-59 #item-59 h2,
+.item-60 #item-60 h2,
+.item-61 #item-61 h2,
+.item-62 #item-62 h2,
+.item-63 #item-63 h2,
+.item-64 #item-64 h2,
+.item-65 #item-65 h2,
+.item-66 #item-66 h2,
+.item-67 #item-67 h2,
+.item-68 #item-68 h2,
+.item-69 #item-69 h2,
+.item-70 #item-70 h2,
+.item-71 #item-71 h2,
+.item-72 #item-72 h2,
+.item-73 #item-73 h2,
+.item-74 #item-74 h2,
+.item-75 #item-75 h2,
+.item-76 #item-76 h2,
+.item-77 #item-77 h2,
+.item-78 #item-78 h2,
+.item-79 #item-79 h2,
+.item-80 #item-80 h2,
+.item-81 #item-81 h2,
+.item-82 #item-82 h2,
+.item-83 #item-83 h2,
+.item-84 #item-84 h2,
+.item-85 #item-85 h2,
+.item-86 #item-86 h2,
+.item-87 #item-87 h2,
+.item-x3-1 #item-x3-1 h2,
+.item-x3-2 #item-x3-2 h2,
+.item-x3-3 #item-x3-3 h2,
+.item-x3-4 #item-x3-4 h2,
+.item-x3-5 #item-x3-5 h2,
+.item-x5-1 #item-x5-1 h2 {
 	background: rgba($blue,0.7);
 }

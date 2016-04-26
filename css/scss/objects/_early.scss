@@ -1,5 +1,5 @@
 /* Homepage */
-.category {
+.inner.category {
 	.navigation {
 		li:nth-child(1) {
 			h2.headline {
@@ -13,7 +13,7 @@
 		bottom: 60px;
 		left: 61px;
 		width: 300px;
-		height: calc(100% - 270px);
+		height: calc(100% - 320px);
 		-webkit-transition: all .25s ease;
     -moz-transition: all .25s ease;
     transition: all .25s ease;

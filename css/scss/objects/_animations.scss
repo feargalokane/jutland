@@ -1,0 +1,120 @@
+/* Animations */
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.33;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes main_nav_reveal {
+  0% {
+    opacity: 0;
+    bottom: -90px;
+  }
+  50% {
+    opacity: 0.33;
+    bottom: -60px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+
+
+
+
+// Home page appearance
+.front .section-list {
+	opacity: 0;
+	animation-name: reveal;
+  	animation-duration: 1.1667s;
+  	animation-timing-function: ease-in-out;
+  	animation-delay: .333s;
+  	animation-fill-mode: forwards;
+}
+
+.front h1.site-title {
+	opacity: 0;
+	animation-name: reveal;
+  	animation-duration: 1s;
+  	animation-timing-function: ease-in-out;
+  	animation-delay: .25s;
+  	animation-fill-mode: forwards;
+}
+
+.front ul.funders {
+	opacity: 0;
+	animation-name: reveal;
+  	animation-duration: 1.333s;
+  	animation-timing-function: ease-in-out;
+  	animation-delay: .6667s;
+  	animation-fill-mode: forwards;
+}
+
+// Main Nav Appearance
+.inner .main-nav {
+	opacity: 0;
+	animation-name: main_nav_reveal;
+  	animation-duration: 0.333s;
+  	animation-timing-function: ease-in-out;
+  	animation-delay: 0.1667s;
+  	animation-fill-mode: forwards;
+}
+
+
+// Main Section Listing
+.inner .section-list.secondary {
+	opacity: 0;
+	animation-name: reveal;
+  	animation-duration: 0.667s;
+  	animation-timing-function: ease-in-out;
+  	animation-delay: .15s;
+  	animation-fill-mode: forwards;
+}
+
+// Sidebar Section listing
+.inner.category .section-list.secondary {
+	opacity: 0;
+	animation-name: reveal;
+  	animation-duration: 0.5s;
+  	animation-timing-function: ease-in-out;
+  	animation-delay: .1s;
+  	animation-fill-mode: forwards;
+}
+
+// Timeline appearance - Main
+.timeline {
+	opacity: 0;
+	animation-name: reveal;
+  	animation-duration: 0.667s;
+  	animation-timing-function: ease-in-out;
+  	animation-delay: 0.1667s;
+  	animation-fill-mode: forwards;
+}
+
+
+// Timeline appearance - Sidebar
+.inner.item .timeline {
+	opacity: 0;
+	animation-name: reveal;
+  	animation-duration: 0.333s;
+  	animation-timing-function: ease-in-out;
+  	animation-delay: 0;
+  	animation-fill-mode: forwards;
+}
+
+// Main content appearance
+.inner.item .container {
+
+} 
+
+.inner.item .container .media {
+
+}

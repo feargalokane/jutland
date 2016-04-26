@@ -56,9 +56,6 @@ a, input, iframe {
 		color: $black;
 		position: absolute;
 		padding: 10px 30px;
-		-webkit-transition: all .25s ease;
-    -moz-transition: all .25s ease;
-    transition: all .25s ease;
 	}
 
 .title {
@@ -72,9 +69,6 @@ a, input, iframe {
 	border-bottom: 1px solid $blue;
 	padding: 10px 40px 10px 300px;
 	width: 60%;
-	-webkit-transition: all .25s ease;
-  -moz-transition: all .25s ease;
-  transition: all .25s ease;
   text-align: right;
   box-sizing: border-box;
 
